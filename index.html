@@ -178,45 +178,66 @@
         </section>
 
        <style>
-    /* Styling to ensure images never stretch and boxes look cool */
+    /* Centered Layout Wrapper */
+    .layout-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+    }
+
+    /* Mobile responsiveness: stack on small screens */
+    @media (max-width: 768px) {
+        .layout-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Restored component styling */
     .responsive-poster {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         border-radius: 12px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
         display: block;
     }
     .info-box {
         background-color: #1a1a1a;
         border-left: 4px solid #25D366;
-        padding: 20px;
+        padding: 25px;
         margin: 20px 0;
         border-radius: 0 8px 8px 0;
     }
     .info-box h3 {
         color: #25D366;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+        font-size: 1.3em;
     }
     .schedule-list {
         list-style: none;
         padding: 0;
         margin: 0;
+        line-height: 1.8;
     }
     .schedule-list li {
         margin-bottom: 10px;
         font-size: 1.1em;
+        color: #e0e0e0;
     }
     .whatsapp-btn {
         display: inline-block;
         background-color: rgba(37, 211, 102, 0.15);
         color: #25D366;
-        padding: 12px 18px;
+        padding: 14px 20px;
         border-radius: 8px;
         text-decoration: none;
         font-weight: bold;
         border: 1px solid #25D366;
-        margin-top: 10px;
+        margin-top: 15px;
         transition: all 0.3s ease;
     }
     .whatsapp-btn:hover {
@@ -227,7 +248,7 @@
         display: inline-block;
         background-color: #25D366;
         color: #000;
-        padding: 15px 30px;
+        padding: 16px 32px;
         border-radius: 8px;
         text-decoration: none;
         font-weight: bold;
@@ -243,61 +264,63 @@
 <!-- ========================================== -->
 <!-- 1. WEEKLY CLASSES (MONDAY & WEDNESDAY)     -->
 <!-- ========================================== -->
-<section id="classes" class="classes-section">
-    <div class="class-info">
-        <h2>Weekly Classes (Mon & Wed)</h2>
-        <p style="font-size: 1.2em; color: #ccc;">Sensual Bachata Classes + Social Dancing 'til Late @ Totos By The River!</p>
-        
-        <div class="info-box">
-            <h3>Schedule & Pricing</h3>
-            <ul class="schedule-list">
-                <li>🕒 <strong>7:30pm – 9:30pm:</strong> Classes (Beginners, Improvers, Int/Adv)</li>
-                <li>🎉 <strong>9:30pm – 11:15pm:</strong> Party & Practice!</li>
-                <li>💰 <strong>£14</strong> (2h classes + social) | <strong>£10</strong> (1h class + social) | <strong>£6</strong> (Social only)</li>
-            </ul>
-        </div>
-
-        <div class="info-box" style="border-left-color: #ff9800;">
-            <h3 style="color: #ff9800;">Never danced before? Don't worry!</h3>
-            <p>Come as you are, no partner needed—just bring your smile and enjoy the vibe! All levels are welcome, from absolute beginners to advanced, with split group classes so you learn at your own pace.</p>
+<section id="classes" style="border-bottom: 1px solid #333;">
+    <div class="layout-container">
+        <div class="class-info">
+            <h2 style="margin-bottom: 5px;">Weekly Classes (Mon & Wed)</h2>
+            <p style="font-size: 1.2em; color: #aaa; margin-top: 0;">Sensual Bachata Classes + Social Dancing 'til Late @ Totos By The River!</p>
             
-            <!-- WhatsApp Free Pass Link restored perfectly -->
-            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%20would%20like%20to%20register%20for%20my%20free%20first%20bachata%20class%20as%20an%20absolute%20beginner." target="_blank" class="whatsapp-btn">
-                💚 FREE first class for new absolute beginners (Click here to register via WhatsApp)
-            </a>
+            <div class="info-box">
+                <h3>Schedule & Pricing</h3>
+                <ul class="schedule-list">
+                    <li>🕒 <strong>7:30pm – 9:30pm:</strong> Classes (Beginners, Improvers, Int/Adv)</li>
+                    <li>🎉 <strong>9:30pm – 11:15pm:</strong> Party & Social Dance Practice!</li>
+                    <li>💰 <strong>£14</strong> (2h classes + social) | <strong>£10</strong> (1h class + social) | <strong>£6</strong> (Social only)</li>
+                </ul>
+            </div>
+
+            <div class="info-box" style="border-left-color: #ff9800;">
+                <h3 style="color: #ff9800;">Never danced before? Don't worry!</h3>
+                <p style="color: #ddd; line-height: 1.6;">Come as you are, no partner needed—just bring your smile and enjoy the vibe! All levels are welcome, from absolute beginners to advanced, with split group classes so you learn at your own pace.</p>
+                
+                <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%20would%20like%20to%20register%20for%20my%20free%20first%20bachata%20class%20as%20an%20absolute%20beginner." target="_blank" class="whatsapp-btn">
+                    💚 FREE first class for new absolute beginners (Click to WhatsApp Jan!)
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="class-image">
-        <!-- Replaced with the responsive class so it won't stretch -->
-        <img src="totosweekly.jpg" alt="All Levels Welcome Classes" class="responsive-poster">
+        <div class="class-image">
+            <img src="totosweekly.jpg" alt="All Levels Weekly Mon & Wed Classes @ Totos By The River" class="responsive-poster">
+        </div>
     </div>
 </section>
 
 <!-- ========================================== -->
 <!-- 2. WEEKEND PARTIES (FRIDAY & SATURDAY)     -->
 <!-- ========================================== -->
-<section id="weekend-events" class="classes-section" style="background-color: rgba(0,0,0,0.4); padding-top: 40px; padding-bottom: 40px; margin-top: 40px; border-top: 1px solid #333;">
-    <!-- Swapped image and text order for alternating layout -->
-    <div class="class-image">
-        <img src="fri16octparty.jpg" alt="Friday Bristol Bachata Party" class="responsive-poster">
-    </div>
-    <div class="class-info">
-        <h2>Epic Friday & Saturday Parties</h2>
-        <h3 style="color: #25D366; margin-bottom: 15px;">📍 Docklands Community Centre</h3>
-        <p style="font-size: 1.1em; color: #ddd;">Join us for our special weekend events! Expect high-energy, unstoppable party vibes, and the trademark Bristol Bachata magic.</p>
-        
-        <div class="info-box">
-            <h3>Weekend Schedule & Info</h3>
-            <ul class="schedule-list">
-                <li>✅ <strong>9:00pm – 1:00am:</strong> Social Party (90% Bachata + Salsa & Kizomba)</li>
-                <li>🎵 <strong>Styles:</strong> Sensual, BachaZouk, Moderna, Dominican & Influence</li>
-                <li>🍹 <strong>Good to know:</strong> BYO drinks & snacks, free parking all around the venue.</li>
-            </ul>
+<section id="weekend-events" style="background-color: #0a0a0a;">
+    <div class="layout-container">
+        <!-- Image is placed first in the HTML but CSS Grid handles alignment -->
+        <div class="class-image">
+            <img src="fri16octparty.jpg" alt="Epic Friday Bachata Party" class="responsive-poster">
         </div>
+        <div class="class-info">
+            <h2 style="margin-bottom: 5px;">Epic Friday & Saturday Parties</h2>
+            <h3 style="color: #25D366; margin-top: 0;">📍 Docklands Community Centre</h3>
+            <p style="font-size: 1.1em; color: #ddd; line-height: 1.6;">Join us for our special weekend events! Expect high-energy, unstoppable party vibes, and the trademark Bristol Bachata magic.</p>
+            
+            <div class="info-box">
+                <h3>Weekend Schedule & Info</h3>
+                <ul class="schedule-list">
+                    <li>✅ <strong>9:00pm – 1:00am:</strong> Social Party (90% Bachata + Salsa & Kizomba)</li>
+                    <li>🎵 <strong>Styles:</strong> Sensual, BachaZouk, Moderna, Dominican & Influence</li>
+                    <li>🍹 <strong>Good to know:</strong> BYO drinks & snacks, free parking all around the venue.</li>
+                </ul>
+            </div>
 
-        <a href="http://bristolbachata.sumupstore.com" target="_blank" class="ticket-btn">
-            🎟️ Get Your Party Tickets Here
-        </a>
+            <a href="http://bristolbachata.sumupstore.com" target="_blank" class="ticket-btn">
+                🎟️ Get Your Party Tickets Here
+            </a>
+        </div>
     </div>
 </section>
 
