@@ -177,7 +177,7 @@
             </div>
         </section>
 
-       <style>
+      <style>
     /* Centered Layout Wrapper */
     .layout-container {
         max-width: 1100px;
@@ -210,12 +210,6 @@
         padding: 25px;
         margin: 20px 0;
         border-radius: 0 8px 8px 0;
-    }
-    .info-box h3 {
-        color: #25D366;
-        margin-top: 0;
-        margin-bottom: 12px;
-        font-size: 1.3em;
     }
     .schedule-list {
         list-style: none;
@@ -259,32 +253,52 @@
     .ticket-btn:hover {
         transform: scale(1.05);
     }
+    
+    /* Progressive Scroll Animation */
+    .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+    }
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
 </style>
 
 <!-- ========================================== -->
-<!-- 1. WEEKLY CLASSES (MONDAY & WEDNESDAY)     -->
+<!-- SCHEDULE SECTION (CLASSES & PARTIES)       -->
 <!-- ========================================== -->
-<section id="classes" style="border-bottom: 1px solid #333;">
-    <div class="layout-container">
+<section id="schedule" style="padding-top: 40px; padding-bottom: 60px; background-color: #0a0a0a;">
+    
+    <!-- MASTER HEADLINE -->
+    <div class="reveal" style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: 2.8em; margin-bottom: 10px;">Schedule</h2>
+        <p style="color: #25D366; font-size: 1.2em; margin-top: 0;">Join us during the week or at our epic weekend parties!</p>
+    </div>
+
+    <!-- 1. WEEKLY CLASSES (MONDAY & WEDNESDAY) -->
+    <div class="layout-container reveal">
         <div class="class-info">
-            <h2 style="margin-bottom: 5px;">Weekly Classes (Mon & Wed)</h2>
-            <p style="font-size: 1.2em; color: #aaa; margin-top: 0;">Sensual Bachata Classes + Social Dancing 'til Late @ Totos By The River!</p>
+            <!-- Uses h3 to inherit the smaller, consistent sub-headline font -->
+            <h3 style="margin-bottom: 5px;">Weekly Classes (Mon & Wed)</h3>
+            <p style="font-size: 1.1em; color: #aaa; margin-top: 0;">Sensual Bachata Classes + Social Dancing 'til Late @ Totos By The River!</p>
             
             <div class="info-box">
-                <h3>Schedule & Pricing</h3>
+                <h4 style="color: #25D366; margin-top: 0; margin-bottom: 12px; font-size: 1.2em;">Schedule & Pricing</h4>
                 <ul class="schedule-list">
                     <li>🕒 <strong>7:30pm – 9:30pm:</strong> Classes (Beginners, Improvers, Int/Adv)</li>
-                    <li>🎉 <strong>9:30pm – 11:15pm:</strong> Party & Social Dance Practice!</li>
+                    <li>🎉 <strong>9:30pm – 11:15pm:</strong> Party & Practice!</li>
                     <li>💰 <strong>£14</strong> (2h classes + social) | <strong>£10</strong> (1h class + social) | <strong>£6</strong> (Social only)</li>
                 </ul>
             </div>
 
             <div class="info-box" style="border-left-color: #ff9800;">
-                <h3 style="color: #ff9800;">Never danced before? Don't worry!</h3>
-                <p style="color: #ddd; line-height: 1.6;">Come as you are, no partner needed—just bring your smile and enjoy the vibe! All levels are welcome, from absolute beginners to advanced, with split group classes so you learn at your own pace.</p>
+                <h4 style="color: #ff9800; margin-top: 0; margin-bottom: 12px; font-size: 1.2em;">Never danced before? Don't worry!</h4>
+                <p style="color: #ddd; line-height: 1.6; margin-bottom: 15px;">Come as you are, no partner needed—just bring your smile and enjoy the vibe! All levels are welcome, from absolute beginners to advanced, with split group classes so you learn at your own pace.</p>
                 
                 <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%20would%20like%20to%20register%20for%20my%20free%20first%20bachata%20class%20as%20an%20absolute%20beginner." target="_blank" class="whatsapp-btn">
-                    💚 FREE first class for new absolute beginners (Click to WhatsApp Jan!)
+                    💚 FREE first class for new absolute beginners (Click to register)
                 </a>
             </div>
         </div>
@@ -292,24 +306,19 @@
             <img src="totosweekly.jpg" alt="All Levels Weekly Mon & Wed Classes @ Totos By The River" class="responsive-poster">
         </div>
     </div>
-</section>
 
-<!-- ========================================== -->
-<!-- 2. WEEKEND PARTIES (FRIDAY & SATURDAY)     -->
-<!-- ========================================== -->
-<section id="weekend-events" style="background-color: #0a0a0a;">
-    <div class="layout-container">
-        <!-- Image is placed first in the HTML but CSS Grid handles alignment -->
+    <!-- 2. WEEKEND PARTIES (FRIDAY & SATURDAY) -->
+    <div class="layout-container reveal" style="margin-top: 60px; padding-top: 40px; border-top: 1px solid #222;">
         <div class="class-image">
-            <img src="fri16octparty.jpg" alt="Epic Friday Bachata Party" class="responsive-poster">
+            <img src="fri16octparty.jpg" alt="Friday Bristol Bachata Party" class="responsive-poster">
         </div>
         <div class="class-info">
-            <h2 style="margin-bottom: 5px;">Epic Friday & Saturday Parties</h2>
-            <h3 style="color: #25D366; margin-top: 0;">📍 Docklands Community Centre</h3>
+            <h3 style="margin-bottom: 5px;">Epic Friday & Saturday Parties</h3>
+            <h4 style="color: #25D366; margin-top: 0; font-size: 1.1em;">📍 Docklands Community Centre</h4>
             <p style="font-size: 1.1em; color: #ddd; line-height: 1.6;">Join us for our special weekend events! Expect high-energy, unstoppable party vibes, and the trademark Bristol Bachata magic.</p>
             
             <div class="info-box">
-                <h3>Weekend Schedule & Info</h3>
+                <h4 style="color: #25D366; margin-top: 0; margin-bottom: 12px; font-size: 1.2em;">Weekend Schedule & Info</h4>
                 <ul class="schedule-list">
                     <li>✅ <strong>9:00pm – 1:00am:</strong> Social Party (90% Bachata + Salsa & Kizomba)</li>
                     <li>🎵 <strong>Styles:</strong> Sensual, BachaZouk, Moderna, Dominican & Influence</li>
@@ -323,6 +332,24 @@
         </div>
     </div>
 </section>
+
+<!-- Scroll Animation Script (Add this just above your closing </body> tag if animations aren't firing) -->
+<script>
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 100;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal(); // Trigger once on load
+</script>
+        
 
         <section id="pricing" class="py-24 bg-bbDark">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
