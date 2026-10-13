@@ -103,35 +103,40 @@
     </header>
 
     <main>
-        <section id="hero" class="relative h-screen flex items-center justify-center pt-20">
-            <!-- Background Image -->
-            <div class="absolute inset-0 z-0 bg-gradient-to-br from-[#0f2417] via-bbDark to-black">
-                <img src="" alt="Bristol Bachata - The Biggest and Friendliest School in the South West" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/1920x1080/1a1a1a/4ade80?text=Bristol+Bachata+Hero'">
-                <div class="absolute inset-0 bg-gradient-to-b from-bbDark/80 via-bbDark/60 to-bbDark"></div>
-            </div>
-            
-            <!-- Hero Content -->
-            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto fade-in-section">
-                <span class="inline-block py-1 px-3 rounded-full bg-bbGreen/20 text-bbGreen font-semibold text-sm tracking-wider uppercase mb-6 border border-bbGreen/30 shadow-[0_0_10px_rgba(74,222,128,0.2)]">
-                    Your Ultimate Bachata Journey Starts Here
-                </span>
-                <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-                    FEEL THE <span class="text-transparent bg-clip-text bg-gradient-to-r from-bbGreen to-emerald-300">VIBE.</span><br>
-                    JOIN THE <span class="text-transparent bg-clip-text bg-gradient-to-r from-bbGreen to-emerald-300">COMMUNITY.</span>
-                </h1>
-                <p class="text-lg md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto font-light">
-                    The South West's Biggest & Friendliest Bachata School. No partner needed. All levels welcome!
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://bristolbachata.sumupstore.com" class="bg-bbGreen text-black hover:bg-bbGreenHover px-8 py-4 rounded-full font-heading font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(74,222,128,0.3)]">
-                        Book Classes & Tickets
-                    </a>
-                    <a href="#classes" class="bg-white/10 text-white hover:bg-white/20 border border-white/20 px-8 py-4 rounded-full font-heading font-bold text-lg transition-all backdrop-blur-sm">
-                        View Schedule
-                    </a>
-                </div>
-            </div>
-        </section>
+        <!-- ========================================== -->
+<!-- HERO VIDEO SECTION (BACKGROUND VIDEO EFFECT) -->
+<!-- ========================================== -->
+<section id="home" class="hero-video-section" style="position: relative; width: 100%; height: 85vh; overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center;">
+    
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: 100%; height: 100%; transform: translate(-50%, -50%); object-fit: cover; z-index: 1;">
+        <source src="hero-video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Subtle Gradient Overlay (Lighter so video is clearly visible) -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 100%); z-index: 2;"></div>
+
+    <!-- Centered Content Overlay -->
+    <div class="hero-content" style="position: relative; z-index: 3; max-width: 800px; padding: 20px;">
+        
+        <!-- Optional Logo Placeholder -->
+        <img src="watermarked_img_10917108044149931939.jpg" alt="Bristol Bachata Logo" style="width: 110px; height: 110px; border-radius: 50%; border: 2px solid #25D366; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); object-fit: cover;">
+        
+        <!-- Caption with Main Website Font & Styling -->
+        <h1 style="font-family: inherit; font-size: 3.2em; font-weight: 800; color: #ffffff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; text-shadow: 0 4px 12px rgba(0,0,0,0.8);">
+            Feel The Vibe.
+        </h1>
+        
+        <p style="font-family: inherit; font-size: 1.5em; font-weight: 600; color: #25D366; letter-spacing: 1px; margin-top: 0; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.8);">
+            Join Community.
+        </p>
+
+        <!-- Call To Action Button -->
+        <a href="#schedule" class="ticket-btn" style="font-family: inherit; display: inline-block; background-color: #25D366; color: #000000; padding: 16px 36px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transition: transform 0.2s ease;">
+            View Classes & Parties
+        </a>
+    </div>
+</section>
 
         <section id="about" class="py-24 bg-bbDark">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
