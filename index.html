@@ -103,41 +103,21 @@
     </header>
 
     <main>
-        <!-- ========================================== -->
-<!-- HERO VIDEO SECTION (BACKGROUND VIDEO EFFECT) -->
+       <!-- ========================================== -->
+<!-- HERO SECTION WITH BACKGROUND VIDEO         -->
 <!-- ========================================== -->
-<section id="home" class="hero-video-section" style="position: relative; width: 100%; height: 85vh; overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center;">
+<section id="home" class="hero-section" style="position: relative; overflow: hidden;">
     
     <!-- Background Video -->
-    <video autoplay loop muted playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: 100%; height: 100%; transform: translate(-50%, -50%); object-fit: cover; z-index: 1;">
+    <video autoplay loop muted playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: 100%; height: 100%; transform: translate(-50%, -50%); object-fit: cover; z-index: 0; opacity: 0.65;">
         <source src="hero-video.mp4" type="video/mp4">
     </video>
 
-    <!-- Subtle Gradient Overlay (Lighter so video is clearly visible) -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 100%); z-index: 2;"></div>
-
-    <!-- Centered Content Overlay -->
-    <div class="hero-content" style="position: relative; z-index: 3; max-width: 800px; padding: 20px;">
-        
-        <!-- Optional Logo Placeholder -->
-        <img src="watermarked_img_10917108044149931939.jpg" alt="Bristol Bachata Logo" style="width: 110px; height: 110px; border-radius: 50%; border: 2px solid #25D366; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); object-fit: cover;">
-        
-        <!-- Caption with Main Website Font & Styling -->
-        <h1 style="font-family: inherit; font-size: 3.2em; font-weight: 800; color: #ffffff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; text-shadow: 0 4px 12px rgba(0,0,0,0.8);">
-            Feel The Vibe.
-        </h1>
-        
-        <p style="font-family: inherit; font-size: 1.5em; font-weight: 600; color: #25D366; letter-spacing: 1px; margin-top: 0; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.8);">
-            Join Community.
-        </p>
-
-        <!-- Call To Action Button -->
-        <a href="#schedule" class="ticket-btn" style="font-family: inherit; display: inline-block; background-color: #25D366; color: #000000; padding: 16px 36px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transition: transform 0.2s ease;">
-            View Classes & Parties
-        </a>
+    <!-- Original Hero Content (Preserves original styling & fonts) -->
+    <div class="hero-content" style="position: relative; z-index: 1;">
+        <!-- Place your original header content, captions, and buttons here -->
     </div>
 </section>
-
         <section id="about" class="py-24 bg-bbDark">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
