@@ -505,23 +505,7 @@
             </div>
         </section>
 
-<!-- Scroll Animation Script (Add this just above your closing 
-    <script>
-        // Open the Privacy / Cookie policy panel when a link points straight at it
-        function openPolicyFromHash() {
-            if (!location.hash) return;
-            try {
-                var el = document.querySelector(location.hash);
-                if (el && el.tagName === 'DETAILS') {
-                    el.open = true;
-                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            } catch (e) {}
-        }
-        window.addEventListener('hashchange', openPolicyFromHash);
-        document.addEventListener('DOMContentLoaded', openPolicyFromHash);
-    </script>
-</body> tag if animations aren't firing) -->
+<!-- Scroll Animation Script (Add this just above your closing -->
 <script>
     function reveal() {
         var reveals = document.querySelectorAll(".reveal");
@@ -708,8 +692,10 @@
  
                             <!-- NEXT PARTY -->
                             <div class="mt-6 p-5 rounded-xl bg-bbGreen/10 border border-bbGreen/30">
-                                <span class="inline-block py-1 px-3 rounded-full bg-bbGreen text-black font-bold text-xs tracking-wider uppercase mb-3">Next Party</span>
-                                <h4 class="text-xl font-heading font-bold text-white">Friday 16th October 2026</h4>
+                                <span class="inline-block py-1 px-3 rounded-full bg-bbGreen text-black font-bold text-xs tracking-wider uppercase mb-3">Next Parties</span>
+                                <h4 class="text-xl font-heading font-bold text-white">Friday 16th October 2026
+                                <p>Friday 6th & 20th Nov</p>
+                                <p>Fri 4th Dec & Sat 19th Dec</p></h4>
                             </div>
  
                             <ul class="space-y-4 mt-6">
