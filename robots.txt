@@ -1,0 +1,6 @@
+# Allow all search engines and AI search crawlers.
+User-agent: *
+Allow: /
+
+# TODO: replace with your own domain once connected
+Sitemap: https://bristol-bachata.jantabaka.workers.dev/sitemap.xml
