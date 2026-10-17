@@ -275,42 +275,92 @@
     </script>
     <!-- Event data: update (or remove) after each party so it never goes out of date -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "DanceEvent",
-  "name": "Bristol Bachata Friday Party",
-  "startDate": "2026-10-16T21:00:00+01:00",
-  "endDate": "2026-10-17T01:00:00+01:00",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "description": "Social party, 90% bachata plus salsa and kizomba. No partner needed, all levels welcome.",
-  "image": [
-    "https://bristolbachata.co.uk/fri16octparty.jpg"
-  ],
-  "location": {
-    "@type": "Place",
-    "name": "Docklands Community Centre",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "29 Brigstocke Road",
-      "addressLocality": "Bristol",
-      "postalCode": "BS2 8UA",
-      "addressCountry": "GB"
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "DanceEvent",
+    "name": "Bristol Bachata Friday Party – 6 November",
+    "startDate": "2026-11-06T20:00:00+00:00",
+    "endDate": "2026-11-07T01:10:00+00:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "description": "Classes 8:00-10:15pm then social party 10:30pm-1:10am, 90% bachata plus salsa and kizomba. No partner needed, all levels welcome.",
+    "image": [
+      "https://bristolbachata.co.uk/6nov.jpg"
+    ],
+    "location": {
+      "@type": "Place",
+      "name": "Docklands Community Centre",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "29 Brigstocke Road",
+        "addressLocality": "Bristol",
+        "postalCode": "BS2 8UA",
+        "addressCountry": "GB"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bristol Bachata",
+      "url": "https://bristolbachata.co.uk/"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Class + Party",
+        "price": "20",
+        "priceCurrency": "GBP",
+        "url": "https://bristolbachata.sumupstore.com",
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Party only",
+        "price": "14",
+        "priceCurrency": "GBP",
+        "url": "https://bristolbachata.sumupstore.com",
+        "availability": "https://schema.org/InStock"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "DanceEvent",
+    "name": "Bristol Bachata Friday Party – 20 November",
+    "startDate": "2026-11-20T20:15:00+00:00",
+    "endDate": "2026-11-21T01:00:00+00:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "description": "Complimentary class 8:15-9pm then social party 9pm-1am, 90% bachata plus salsa and kizomba. No partner needed, all levels welcome.",
+    "image": [
+      "https://bristolbachata.co.uk/20nov.jpg"
+    ],
+    "location": {
+      "@type": "Place",
+      "name": "Docklands Community Centre",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "29 Brigstocke Road",
+        "addressLocality": "Bristol",
+        "postalCode": "BS2 8UA",
+        "addressCountry": "GB"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bristol Bachata",
+      "url": "https://bristolbachata.co.uk/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "name": "Party with complimentary class",
+      "price": "12",
+      "priceCurrency": "GBP",
+      "url": "https://bristolbachata.sumupstore.com",
+      "availability": "https://schema.org/InStock"
     }
-  },
-  "organizer": {
-    "@type": "Organization",
-    "name": "Bristol Bachata",
-    "url": "https://bristolbachata.co.uk/"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "12",
-    "priceCurrency": "GBP",
-    "url": "https://bristolbachata.sumupstore.com",
-    "availability": "https://schema.org/InStock"
   }
-}
+]
     </script>
 </head>
 <body class="antialiased selection:bg-bbGreen selection:text-black">
@@ -671,63 +721,60 @@
         <section id="parties" class="py-24 bg-bbCard border-y border-white/5 relative overflow-hidden">
             <!-- Decorative background blob -->
             <div class="absolute top-1/2 right-0 w-96 h-96 bg-bbGreen/10 rounded-full blur-3xl -z-10 transform -translate-y-1/2 translate-x-1/2"></div>
- 
+
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">
                     <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Party Nights</span>
-                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Friday & Saturday Parties</h2>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Friday &amp; Saturday Parties</h2>
                     <p class="text-gray-400 text-lg">Our biggest nights out: great music, great people and a packed dance floor at Docklands.</p>
                 </div>
- 
+
+                <div class="space-y-20">
+
+                <!-- ===== Fri 6 Nov PARTY ===== -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <!-- Party Info -->
-                    <div class="space-y-8 fade-in-section">
+                    <!-- Party info -->
+                    <div class="fade-in-section">
                         <div class="bg-bbDark p-8 rounded-2xl border border-white/10 hover:border-bbGreen/50 transition-colors">
                             <div class="flex items-center gap-4 mb-4">
-                                <div class="w-12 h-12 rounded-full bg-bbGreen/20 flex items-center justify-center text-bbGreen">
+                                <div class="w-12 h-12 rounded-full bg-bbGreen/20 flex items-center justify-center text-bbGreen flex-shrink-0">
                                     <i class="fa-solid fa-champagne-glasses text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-2xl font-heading font-bold text-white">Friday & Saturday Parties</h3>
+                                    <h3 class="text-2xl font-heading font-bold text-white">Friday Bachata Party</h3>
                                     <p class="text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-bbGreen"></i>Docklands, Bristol</p>
                                 </div>
                             </div>
- 
-                            <!-- NEXT PARTY -->
+
                             <div class="mt-6 p-5 rounded-xl bg-bbGreen/10 border border-bbGreen/30">
-                                <span class="inline-block py-1 px-3 rounded-full bg-bbGreen text-black font-bold text-xs tracking-wider uppercase mb-3">Next Parties</span>
-                                <h4 class="text-xl font-heading font-bold text-white">Friday 16th October 2026</h4>
-                                <p class="text-xl font-heading font-bold text-white mt-1">Friday 6th &amp; 20th Nov</p>
-                                <p class="text-xl font-heading font-bold text-white mt-1">Fri 4th Dec &amp; Sat 19th Dec</p>
+                                <span class="inline-block py-1 px-3 rounded-full bg-bbGreen text-black font-bold text-xs tracking-wider uppercase mb-3">Next Party</span>
+                                <h4 class="text-xl font-heading font-bold text-white">Friday 6th November 2026</h4>
                             </div>
- 
+
                             <ul class="space-y-4 mt-6">
                                 <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
-                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Fri 16 Oct</div>
+                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Fri 6 Nov</div>
                                     <div class="min-w-0">
                                         <h4 class="text-lg font-bold text-white">Friday Bachata Party</h4>
-                                        <!-- TODO: add time, DJs and music from the poster -->
-                                        <p class="text-gray-400 text-sm mt-1">9:00pm – 1:00am: Social Party (90% Bachata + Salsa & Kizomba) with DJ Jan</p>
+                                        <p class="text-gray-400 text-sm mt-1">8:00 – 10:15pm: Classes<br>10:30pm – 1:10am: Social Party (90% Bachata + Salsa &amp; Kizomba) with DJ Jan</p>
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
                                     <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Venue</div>
                                     <div class="min-w-0">
                                         <h4 class="text-lg font-bold text-white">Docklands</h4>
-                                        <!-- TODO: add full address -->
                                         <p class="text-gray-400 text-sm mt-1">Docklands Community Centre, BS28UA</p>
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
                                     <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Tickets</div>
                                     <div class="min-w-0">
-                                        <h4 class="text-lg font-bold text-white">Book online or pay on the door cash/card</h4>
-                                        <!-- TODO: add price -->
-                                        <p class="text-gray-400 text-sm mt-1">£12. Tickets available online & on the door. Come solo or with friends, BYOB, no bar on site, free parking outside, all levels welcome.</p>
+                                        <h4 class="text-lg font-bold text-white">Class + Party £20 · Party only £14</h4>
+                                        <p class="text-gray-400 text-sm mt-1">Book online or pay on the door cash/card. Come solo or with friends, BYOB, no bar on site, free parking outside, all levels welcome.</p>
                                     </div>
                                 </li>
                             </ul>
- 
+
                             <div class="mt-6 flex flex-col sm:flex-row gap-3">
                                 <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-center bg-bbGreen text-black hover:bg-bbGreenHover px-6 py-3 rounded-full font-heading font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(74,222,128,0.3)]">
                                     Get Tickets
@@ -735,10 +782,77 @@
                             </div>
                         </div>
                     </div>
- 
-                    <!-- Party Poster -->
+
+                    <!-- Party poster -->
                     <div class="fade-in-section">
-                        <img src="fri16octparty.jpg" alt="Bristol Bachata party poster: Friday 16 October 2026 at Docklands Community Centre, Bristol" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl" onerror="this.src='https://placehold.co/800x1000/171717/4ade80?text=Friday+16+Oct+Party'">
+                        <img src="6nov.jpg" alt="Bristol Bachata party poster: Friday 6 November 2026 at Docklands Community Centre, Bristol" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl" onerror="this.src='https://placehold.co/800x1000/171717/4ade80?text=Friday+6+Nov+Party'">
+                    </div>
+                </div>
+
+                <!-- ===== Fri 20 Nov PARTY ===== -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <!-- Party info -->
+                    <div class="fade-in-section">
+                        <div class="bg-bbDark p-8 rounded-2xl border border-white/10 hover:border-bbGreen/50 transition-colors">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-bbGreen/20 flex items-center justify-center text-bbGreen flex-shrink-0">
+                                    <i class="fa-solid fa-champagne-glasses text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-heading font-bold text-white">Friday Bachata Party</h3>
+                                    <p class="text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-bbGreen"></i>Docklands, Bristol</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 p-5 rounded-xl bg-bbGreen/10 border border-bbGreen/30">
+                                <span class="inline-block py-1 px-3 rounded-full bg-bbGreen text-black font-bold text-xs tracking-wider uppercase mb-3">Following Party</span>
+                                <h4 class="text-xl font-heading font-bold text-white">Friday 20th November 2026</h4>
+                            </div>
+
+                            <ul class="space-y-4 mt-6">
+                                <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Fri 20 Nov</div>
+                                    <div class="min-w-0">
+                                        <h4 class="text-lg font-bold text-white">Friday Bachata Party</h4>
+                                        <p class="text-gray-400 text-sm mt-1">8:15 – 9:00pm: Complimentary class<br>9:00pm – 1:00am: Social Party (90% Bachata + Salsa &amp; Kizomba) with DJ Jan</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Venue</div>
+                                    <div class="min-w-0">
+                                        <h4 class="text-lg font-bold text-white">Docklands</h4>
+                                        <p class="text-gray-400 text-sm mt-1">Docklands Community Centre, BS28UA</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Tickets</div>
+                                    <div class="min-w-0">
+                                        <h4 class="text-lg font-bold text-white">£12 · Party with complimentary class</h4>
+                                        <p class="text-gray-400 text-sm mt-1">One price for the whole night, class included. Book online or pay on the door cash/card. Come solo or with friends, BYOB, no bar on site, free parking outside, all levels welcome.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                                <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-center bg-bbGreen text-black hover:bg-bbGreenHover px-6 py-3 rounded-full font-heading font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(74,222,128,0.3)]">
+                                    Get Tickets
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Party poster -->
+                    <div class="fade-in-section">
+                        <img src="20nov.jpg" alt="Bristol Bachata party poster: Friday 20 November 2026 at Docklands Community Centre, Bristol" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl" onerror="this.src='https://placehold.co/800x1000/171717/4ade80?text=Friday+20+Nov+Party'">
+                    </div>
+                </div>
+
+                </div>
+
+                <!-- More dates -->
+                <div class="mt-16 max-w-3xl mx-auto text-center fade-in-section">
+                    <div class="bg-gradient-to-br from-bbDark to-black p-6 rounded-2xl border border-white/10">
+                        <p class="text-gray-300"><i class="fa-solid fa-calendar-plus text-bbGreen mr-2"></i><strong class="text-white">Also coming up:</strong> Fri 4th Dec &amp; Sat 19th Dec. More details and posters coming soon.</p>
                     </div>
                 </div>
             </div>
