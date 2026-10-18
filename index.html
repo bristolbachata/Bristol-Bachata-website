@@ -10,28 +10,13 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Poppins', 'sans-serif'],
-                    },
-                    colors: {
-                        bbDark: '#0a0a0a',
-                        bbCard: '#171717',
-                        bbGreen: '#4ade80',
-                        bbGreenHover: '#22c55e',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
     <style>
         body {
             background-color: #0a0a0a;
@@ -281,13 +266,17 @@
     "@type": "DanceEvent",
     "name": "Bristol Bachata Friday Party – 6 November",
     "startDate": "2026-11-06T20:00:00+00:00",
-    "endDate": "2026-11-07T01:10:00+00:00",
+    "endDate": "2026-11-07T01:30:00+00:00",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "description": "Classes 8:00-10:15pm then social party 10:30pm-1:10am, 90% bachata plus salsa and kizomba. No partner needed, all levels welcome.",
+    "description": "Classes 8:00-10:15pm then social party 10:30pm-1:30am, 90% bachata plus salsa and kizomba. No partner needed, all levels welcome.",
     "image": [
       "https://bristolbachata.co.uk/6Nov.jpg"
     ],
+    "performer": {
+      "@type": "Person",
+      "name": "DJ Jan (Jan Tabaka)"
+    },
     "location": {
       "@type": "Place",
       "name": "Docklands Community Centre",
@@ -310,6 +299,7 @@
         "name": "Class + Party",
         "price": "20",
         "priceCurrency": "GBP",
+        "validFrom": "2026-10-18T00:00:00+01:00",
         "url": "https://bristolbachata.sumupstore.com",
         "availability": "https://schema.org/InStock"
       },
@@ -318,6 +308,7 @@
         "name": "Party only",
         "price": "14",
         "priceCurrency": "GBP",
+        "validFrom": "2026-10-18T00:00:00+01:00",
         "url": "https://bristolbachata.sumupstore.com",
         "availability": "https://schema.org/InStock"
       }
@@ -335,6 +326,10 @@
     "image": [
       "https://bristolbachata.co.uk/20nov.jpg"
     ],
+    "performer": {
+      "@type": "Person",
+      "name": "DJ Jan (Jan Tabaka)"
+    },
     "location": {
       "@type": "Place",
       "name": "Docklands Community Centre",
@@ -356,6 +351,7 @@
       "name": "Party with complimentary class",
       "price": "12",
       "priceCurrency": "GBP",
+      "validFrom": "2026-10-18T00:00:00+01:00",
       "url": "https://bristolbachata.sumupstore.com",
       "availability": "https://schema.org/InStock"
     }
@@ -370,7 +366,7 @@
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
     <a href="#" class="flex items-center gap-3 font-heading text-2xl font-bold tracking-tighter text-white">
-        <img src="logo.jpg" alt="Bristol Bachata logo" class="h-14 w-30 object-contain rounded-full" onerror="this.style.display='Bristol Bachata'">
+        <img src="logo.jpg" alt="Bristol Bachata logo" width="122" height="56" class="h-14 w-30 object-contain rounded-full" onerror="this.style.display='Bristol Bachata'">
     </a>
                </div>
                 
@@ -389,7 +385,7 @@
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none p-2">
+                    <button id="mobile-menu-btn" aria-label="Open menu" class="text-gray-300 hover:text-white focus:outline-none p-2">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -415,7 +411,7 @@
         <section id="hero" class="relative h-screen flex items-center justify-center pt-20 bg-bbDark">
             <!-- Background Video -->
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <video class="w-full h-full object-cover opacity-60" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+                <video class="w-full h-full object-cover opacity-60" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
                     <source src="hero-video.mp4" type="video/mp4">
                 </video>
                 <div class="absolute inset-0 bg-gradient-to-b from-bbDark/80 via-bbDark/60 to-bbDark"></div>
@@ -474,7 +470,7 @@
                                 <div class="w-12 h-12 rounded-full bg-gray-600 border-2 border-bbDark flex items-center justify-center"><i class="fa-solid fa-user text-gray-300"></i></div>
                                 <div class="w-12 h-12 rounded-full bg-bbGreen border-2 border-bbDark flex items-center justify-center"><i class="fa-solid fa-users text-black"></i></div>
                             </div>
-                            <p class="text-sm text-gray-400 font-medium">Join 1000+ happy dancers<br> at Bristol Bachata</p>
+                            <p class="text-sm text-gray-400 font-medium">Join 1000+ happy dancers<br>in the South West</p>
                         </div>
                     </div>
                     <div class="fade-in-section relative">
@@ -591,7 +587,7 @@
                         <p class="text-gray-400 mb-6 flex-grow">1 hour of class instruction + the social party afterwards.</p>
                         <div class="mb-6">
                             <span class="text-4xl font-heading font-extrabold text-white">£10</span>
-                            <span class="text-gray-500">/ night</span>
+                            <span class="text-gray-400">/ night</span>
                         </div>
                         <a href="https://bristolbachata.sumupstore.com/product/mon-or-wed-1-class" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors mt-auto">Book Now</a>
                     </div>
@@ -621,7 +617,7 @@
                         <p class="text-gray-400 mb-6 flex-grow">Join us for the party and practice time from 9:45 PM.</p>
                         <div class="mb-6">
                             <span class="text-4xl font-heading font-extrabold text-white">£6</span>
-                            <span class="text-gray-500">/ night</span>
+                            <span class="text-gray-400">/ night</span>
                         </div>
                         <a href="https://bristolbachata.sumupstore.com/product/mon-or-wed-party-only" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors">Book Now</a>
                     </div>
@@ -641,7 +637,7 @@
                         <p class="text-gray-400 mb-6">One event a week. Choose Monday or Wednesday.</p>
                         <div class="mb-6">
                             <span class="text-5xl font-heading font-extrabold text-white">£46</span>
-                            <span class="text-gray-500">/ month (25% OFF)</span>
+                            <span class="text-gray-400">/ month (25% OFF)</span>
                         </div>
                         <ul class="space-y-3 mb-8 text-gray-300 text-sm">
                             <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen"></i> 2 classes & party at 1 event per week: Mon <em>or</em> Wed</li>
@@ -689,7 +685,7 @@
                         <p class="text-gray-400 mb-6">One hour of 1-on-1 coaching.</p>
                         <div class="mb-6">
                             <span class="text-5xl font-heading font-extrabold text-white">£65</span>
-                            <span class="text-gray-500">/ hour</span>
+                            <span class="text-gray-400">/ hour</span>
                         </div>
                         <div class="mt-auto space-y-3">
                             <a href="https://bristolbachata.sumupstore.com/product/private-1-2-1-bachata-class-with-jan-1hr" target="_blank" rel="noopener noreferrer" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors">Buy online</a>
@@ -756,7 +752,7 @@
                                     <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Fri 6 Nov</div>
                                     <div class="min-w-0">
                                         <h4 class="text-lg font-bold text-white">Friday Bachata Party</h4>
-                                        <p class="text-gray-400 text-sm mt-1">8:00 – 10:15pm: Classes<br>10:30pm – 1:10am: Social Party (90% Bachata + Salsa &amp; Kizomba) with DJ Jan</p>
+                                        <p class="text-gray-400 text-sm mt-1">8:00 – 10:15pm: Classes<br>10:30pm – 1:30am: Social Party (90% Bachata + Salsa &amp; Kizomba) with DJ Jan</p>
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
@@ -1120,7 +1116,7 @@
                             </span>
                         </summary>
                         <div class="px-5 pb-6 text-gray-400 leading-relaxed text-sm md:text-base space-y-3">
-                            <p class="text-gray-500 text-sm">Last updated: 17 October 2026</p>
+                            <p class="text-gray-400 text-sm">Last updated: 17 October 2026</p>
                             <p><strong class="text-white">Who we are.</strong> Bristol Bachata (run by Jan Tabaka) is responsible for your personal data.</p>
                             <p><strong class="text-white">What we collect and why.</strong> We only collect what you give us: your name, email address and phone number when you buy a ticket or pass, message us (for example on WhatsApp), or ask to join our newsletter. We use it to provide your classes and events, answer your questions, manage your booking and, if you are on our newsletter list, send you news and events. This is based on delivering the service you asked for, and for the newsletter, our legitimate interest in keeping our members informed. You can unsubscribe at any time.</p>
                             <p><strong class="text-white">Who else handles your data.</strong> Online purchases are processed by SumUp, which has its own privacy policy. WhatsApp (Meta) handles messages you send there. This website is delivered through Cloudflare and uses fonts and code libraries loaded from Google Fonts, Tailwind and Font Awesome, which means those providers can see your IP address when you load the page. We do not sell your data.</p>
@@ -1137,7 +1133,7 @@
                             </span>
                         </summary>
                         <div class="px-5 pb-6 text-gray-400 leading-relaxed text-sm md:text-base space-y-3">
-                            <p class="text-gray-500 text-sm">Last updated: 17 October 2026</p>
+                            <p class="text-gray-400 text-sm">Last updated: 17 October 2026</p>
                             <p><strong class="text-white">What are cookies?</strong> Cookies are small text files a website can store on your device. They are used to make sites work, keep them secure, or remember and track what you do.</p>
                             <p><strong class="text-white">What this website uses.</strong> We do not use advertising, analytics or tracking cookies on this website. Our hosting provider, Cloudflare, may set a strictly necessary security cookie to protect the site from bots and abuse. Strictly necessary cookies do not need your consent.</p>
                             <p><strong class="text-white">Other sites we link to.</strong> When you follow a link to our store (SumUp), WhatsApp, Facebook or Instagram, those services may set their own cookies under their own policies. We do not control them.</p>
@@ -1158,7 +1154,7 @@
                 <!-- Brand -->
                 <div class="lg:col-span-1">
                     <a href="#" class="font-heading text-3xl font-bold tracking-tighter text-white block mb-4">
-                     <img src="logo.jpg" alt="Bristol Bachata logo" class="h-14 w-30 object-contain rounded-full" onerror="this.style.display='Bristol Bachata'">
+                     <img src="logo.jpg" alt="Bristol Bachata logo" width="122" height="56" class="h-14 w-30 object-contain rounded-full" onerror="this.style.display='Bristol Bachata'">
                     </a>
                     
                     <p class="text-gray-400 mb-6">Bristol’s home for bachata. Learn, Dance, Socialise. Join one of the biggest, most established, complete and friendliest bachata communities in the UK. Your ultimate bachata journey starts here.</p>
@@ -1227,10 +1223,10 @@
             </div>
 
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm text-center md:text-left mb-4 md:mb-0">
+                <p class="text-gray-400 text-sm text-center md:text-left mb-4 md:mb-0">
                     &copy; <span id="year"></span> Bristol Bachata (since 2018). All rights reserved.
                 </p>
-                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-500">
+                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-400">
                     <a href="#privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="#cookies" class="hover:text-white transition-colors">Cookie Policy</a>
                     <button type="button" data-cookie-settings class="hover:text-white transition-colors">Cookie Settings</button>
