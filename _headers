@@ -1,0 +1,8 @@
+/*.jpg
+  Cache-Control: public, max-age=604800
+/*.JPG
+  Cache-Control: public, max-age=604800
+/*.mp4
+  Cache-Control: public, max-age=604800
+/tailwind.css
+  Cache-Control: public, max-age=86400
