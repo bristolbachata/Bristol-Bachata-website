@@ -411,8 +411,7 @@
         <section id="hero" class="relative h-screen flex items-center justify-center pt-20 bg-bbDark">
             <!-- Background Video -->
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <video class="w-full h-full object-cover opacity-60" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-                    <source src="hero-video.mp4" type="video/mp4">
+                <video id="hero-video" class="w-full h-full object-cover opacity-50" style="opacity:0;transition:opacity 1.2s ease" muted loop playsinline preload="none" aria-hidden="true" data-src="hero-video.mp4">
                 </video>
                 <div class="absolute inset-0 bg-gradient-to-b from-bbDark/80 via-bbDark/60 to-bbDark"></div>
             </div>
@@ -1402,5 +1401,21 @@
             if (saved) { announce(saved); } else { show(false); }
         })();
     </script>
+    
+    <script>
+window.addEventListener('load', function () {
+  var v = document.getElementById('hero-video');
+  if (!v) return;
+  var c = navigator.connection || {};
+  if (c.saveData) return;
+  setTimeout(function () {
+    v.addEventListener('playing', function () { v.style.opacity = ''; }, { once: true });
+    v.src = v.getAttribute('data-src');
+    v.load();
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {});
+  }, 1500);
+});
+</script>
 </body>
 </html>
