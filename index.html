@@ -23,6 +23,8 @@
             color: #f3f4f6;
             overflow-x: hidden;
         }
+        /* Prevent sideways scrolling on phones */
+          html, body { overflow-x: hidden; max-width: 100%; }
         /* Custom scrollbar */
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #171717; }
@@ -417,7 +419,7 @@
             </div>
 
             <!-- Hero Content -->
-            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto fade-in-section">
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto>
                 <span class="inline-block py-1 px-3 rounded-full bg-bbGreen/20 text-bbGreen font-semibold text-sm tracking-wider uppercase mb-6 border border-bbGreen/30 shadow-[0_0_10px_rgba(74,222,128,0.2)]">
                     Your Ultimate Bachata Journey Starts Here
                 </span>
@@ -441,7 +443,7 @@
 
 
         
-        <section id="about" class="py-24 bg-bbDark">
+        <section id="about" class="py-24 bg-bbDark overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div class="fade-in-section">
