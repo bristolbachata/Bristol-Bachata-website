@@ -491,7 +491,18 @@
         <div id="mobile-menu" class="hidden md:hidden bg-bbCard border-b border-white/10">
             <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3 flex flex-col">
                 <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">About</a>
-                <a href="#classes" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">Classes</a>
+
+                <details class="schedule-dropdown w-full">
+                    <summary class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen cursor-pointer flex items-center justify-between">
+                        <span>Classes Timetable</span>
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </summary>
+                    <div class="schedule-submenu">
+                        <a href="#classes">Mon &amp; Wed Classes</a>
+                        <a href="#parties">Weekend Events</a>
+                    </div>
+                </details>
+
                 <a href="#pricing" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">Pricing</a>
                 <a href="#etiquette" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">Etiquette</a>
                 <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">Contact</a>
@@ -589,8 +600,8 @@
             
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">
-                    <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Our Schedule</span>
-                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Weekly Classes & Parties</h2>
+                    <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Classes</span>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Mon & Wed Classes</h2>
                     <p class="text-gray-400 text-lg">Split group classes so you learn at your own pace, guided by 11 passionate teachers.</p>
                 </div>
 
@@ -814,8 +825,8 @@
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">
-                    <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Party Nights</span>
-                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Friday &amp; Saturday Parties</h2>
+                    <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Weekend Events</span>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Friday & Saturday Parties</h2>
                     <p class="text-gray-400 text-lg">Our biggest nights out: great music, great people and a packed dance floor at Docklands.</p>
                 </div>
 
