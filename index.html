@@ -42,6 +42,89 @@
             opacity: 1;
             transform: none;
         }
+                .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .schedule-dropdown {
+            position: relative;
+        }
+
+        .schedule-dropdown > summary {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .schedule-dropdown > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .schedule-submenu {
+            position: absolute;
+            left: 0;
+            top: calc(100% + 0.75rem);
+            min-width: 220px;
+            background: rgba(17, 24, 39, 0.96);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 0.9rem;
+            box-shadow: 0 18px 48px rgba(0,0,0,0.35);
+            padding: 0.5rem;
+            display: grid;
+            gap: 0.35rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+            transition: all 0.2s ease;
+            z-index: 60;
+        }
+
+        .schedule-dropdown[open] .schedule-submenu,
+        .schedule-dropdown:hover .schedule-submenu,
+        .schedule-dropdown:focus-within .schedule-submenu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .schedule-submenu a {
+            display: block;
+            background: rgba(255,255,255,0.02);
+            color: #d1d5db;
+            text-decoration: none;
+            border-radius: 0.7rem;
+            padding: 0.7rem 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .schedule-submenu a:hover {
+            background: rgba(74, 222, 128, 0.12);
+            color: #a7f3d0;
+        }
+
+        @media (max-width: 767px) {
+            .schedule-dropdown {
+                width: 100%;
+            }
+
+            .schedule-dropdown > summary {
+                width: 100%;
+                display: block;
+            }
+
+            .schedule-submenu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                display: grid;
+                margin-top: 0.5rem;
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.06);
+                box-shadow: none;
+            }
+        }
     </style>
 
     <!-- ===== SEO / SOCIAL / AI-SEARCH ===== -->
@@ -375,7 +458,17 @@
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8 items-center">
                     <a href="#about" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">About</a>
-                    <a href="#classes" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">Classes</a>
+                    
+                    <details class="schedule-dropdown inline-block">
+                        <summary class="text-gray-300 hover:text-bbGreen transition-colors font-medium flex items-center gap-2 px-1 py-2 rounded-md">
+                            Classes Timetable
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </summary>
+                        <div class="schedule-submenu">
+                            <a href="#classes">Mon &amp; Wed Classes</a>
+                            <a href="#parties">Weekend Events</a>
+                        </div>
+                    </details>
                     <a href="#pricing" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">Pricing</a>
                     <a href="#etiquette" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">Etiquette</a>
                     <a href="#contact" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">Contact</a>
