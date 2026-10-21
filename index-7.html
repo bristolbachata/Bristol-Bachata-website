@@ -3,170 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bristol Bachata | Bachata Classes & Parties in Bristol</title>
-    <meta name="description" content="Bachata classes in Bristol every Monday & Wednesday for all levels, plus Friday & Saturday parties. No partner needed. Free first class for absolute beginners.">
-    <meta name="keywords" content="Bristol Bachata, Bachata classes Bristol, dance school, Learn to dance, beginner friendly, Jan Tabaka, sensual bachata, bachazouk, dominican bachata, partner social dancing, salsa, latin dance">
+    <title>Bristol Bachata | Bachata Classes &amp; Parties in Bristol</title>
+    <meta name="description" content="Bachata classes in Bristol every Monday &amp; Wednesday for all levels, plus Friday &amp; Saturday parties. No partner needed. Free first class for absolute beginners.">
     <meta name="author" content="Bristol Bachata">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="tailwind.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </noscript>
-    <style>
-        body {
-            background-color: #0a0a0a;
-            color: #f3f4f6;
-            overflow-x: hidden;
-        }
-        /* Prevent sideways scrolling on phones */
-          html, body { overflow-x: hidden; max-width: 100%; }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar { width: 10px; }
-        ::-webkit-scrollbar-track { background: #171717; }
-        ::-webkit-scrollbar-thumb { background: #4ade80; border-radius: 5px; }
-        ::-webkit-scrollbar-thumb:hover { background: #22c55e; }
-        
-        /* Fade-in Animation Classes */
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-            will-change: opacity, visibility;
-        }
-        .fade-in-section.is-visible {
-            opacity: 1;
-            transform: none;
-        }
-                .fade-in-section.is-visible {
-            opacity: 1;
-            transform: none;
-        }
-
-        .schedule-dropdown {
-            position: relative;
-        }
-
-        .schedule-dropdown > summary {
-            list-style: none;
-            cursor: pointer;
-        }
-
-        .schedule-dropdown > summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .schedule-submenu {
-            position: absolute;
-            left: 0;
-            top: calc(100% + 0.75rem);
-            min-width: 220px;
-            background: rgba(17, 24, 39, 0.96);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 0.9rem;
-            box-shadow: 0 18px 48px rgba(0,0,0,0.35);
-            padding: 0.5rem;
-            display: grid;
-            gap: 0.35rem;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(8px);
-            transition: all 0.2s ease;
-            z-index: 60;
-        }
-
-        .schedule-dropdown[open] .schedule-submenu,
-        .schedule-dropdown:hover .schedule-submenu,
-        .schedule-dropdown:focus-within .schedule-submenu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-
-        .schedule-submenu a {
-            display: block;
-            background: rgba(255,255,255,0.02);
-            color: #d1d5db;
-            text-decoration: none;
-            border-radius: 0.7rem;
-            padding: 0.7rem 0.9rem;
-            font-weight: 500;
-            transition: background 0.2s ease, color 0.2s ease;
-        }
-
-        .schedule-submenu a:hover {
-            background: rgba(74, 222, 128, 0.12);
-            color: #a7f3d0;
-        }
-
-        @media (max-width: 767px) {
-            .schedule-dropdown {
-                width: 100%;
-            }
-
-            .schedule-dropdown > summary {
-                width: 100%;
-                display: block;
-            }
-
-            .schedule-submenu {
-                position: static;
-                opacity: 1;
-                visibility: visible;
-                transform: none;
-                display: grid;
-                margin-top: 0.5rem;
-                background: rgba(255,255,255,0.02);
-                border: 1px solid rgba(255,255,255,0.06);
-                box-shadow: none;
-            }
-        }
-    </style>
-
-    <!-- ===== SEO / SOCIAL / AI-SEARCH ===== -->
-    <!-- Domain: bristolbachata.co.uk. If the address ever changes, replace it in this block, in robots.txt and in sitemap.xml -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta name="theme-color" content="#0a0a0a">
     <link rel="canonical" href="https://bristolbachata.co.uk/">
     <link rel="icon" href="logo.jpg">
+
+    <!-- Performance: connect early to Google Fonts, load CSS without blocking render -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>.fade-in-section{opacity:1;transform:none}</style>
+    </noscript>
+
+    <style>
+        /* Font Awesome icon fonts: show fallback straight away instead of blocking (must stay AFTER the Font Awesome link above) */
+        @font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2) format("woff2")}
+        @font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.woff2) format("woff2")}
+        @font-face{font-family:"Font Awesome 6 Brands";font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2) format("woff2")}
+
+        html { scroll-padding-top: 5rem; }
+        html, body { overflow-x: hidden; max-width: 100%; }
+        body { background-color: #0a0a0a; color: #f3f4f6; }
+
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #171717; }
+        ::-webkit-scrollbar-thumb { background: #4ade80; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #22c55e; }
+
+        /* Keyboard focus + skip link (accessibility) */
+        a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #4ade80; outline-offset: 2px; }
+        .skip-link { position: absolute; left: 1rem; top: -4rem; z-index: 100; background: #4ade80; color: #000; padding: .6rem 1rem; border-radius: .5rem; font-weight: 600; text-decoration: none; }
+        .skip-link:focus { top: 1rem; }
+
+        /* Layout helpers */
+        .logo-img { height: 3.5rem; width: auto; }
+        #hero { min-height: 100vh; min-height: 100svh; padding: 6rem 0 3rem; }
+
+        /* Fade-in animation */
+        .fade-in-section { opacity: 0; transform: translateY(30px); transition: opacity .8s ease-out, transform .8s ease-out; }
+        .fade-in-section.is-visible { opacity: 1; transform: none; }
+        @media (prefers-reduced-motion: reduce) {
+            html.scroll-smooth { scroll-behavior: auto; }
+            .fade-in-section { opacity: 1; transform: none; transition: none; }
+        }
+
+        /* Schedule dropdown */
+        .schedule-dropdown { position: relative; }
+        .schedule-dropdown > summary { list-style: none; cursor: pointer; }
+        .schedule-dropdown > summary::-webkit-details-marker { display: none; }
+        .schedule-submenu {
+            position: absolute; left: 0; top: calc(100% + .75rem); min-width: 220px;
+            background: rgba(17,24,39,.96); border: 1px solid rgba(255,255,255,.08); border-radius: .9rem;
+            box-shadow: 0 18px 48px rgba(0,0,0,.35); padding: .5rem; display: grid; gap: .35rem;
+            opacity: 0; visibility: hidden; transform: translateY(8px); transition: all .2s ease; z-index: 60;
+        }
+        .schedule-dropdown[open] .schedule-submenu,
+        .schedule-dropdown:hover .schedule-submenu,
+        .schedule-dropdown:focus-within .schedule-submenu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .schedule-submenu a { display: block; background: rgba(255,255,255,.02); color: #d1d5db; text-decoration: none; border-radius: .7rem; padding: .7rem .9rem; font-weight: 500; transition: background .2s ease, color .2s ease; }
+        .schedule-submenu a:hover { background: rgba(74,222,128,.12); color: #a7f3d0; }
+        @media (max-width: 767px) {
+            .schedule-dropdown { width: 100%; }
+            .schedule-dropdown > summary { width: 100%; }
+            .schedule-submenu { position: static; opacity: 1; visibility: visible; transform: none; margin-top: .5rem; background: rgba(255,255,255,.02); border: 1px solid rgba(255,255,255,.06); box-shadow: none; }
+        }
+    </style>
+
+    <!-- Social sharing -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Bristol Bachata">
     <meta property="og:locale" content="en_GB">
-    <meta property="og:title" content="Bristol Bachata | Bachata Classes & Parties in Bristol">
-    <meta property="og:description" content="Bachata classes every Monday & Wednesday for all levels, plus Friday & Saturday parties. No partner needed. Free first class for absolute beginners.">
+    <meta property="og:title" content="Bristol Bachata | Bachata Classes &amp; Parties in Bristol">
+    <meta property="og:description" content="Bachata classes every Monday &amp; Wednesday for all levels, plus Friday &amp; Saturday parties. No partner needed. Free first class for absolute beginners.">
     <meta property="og:url" content="https://bristolbachata.co.uk/">
     <meta property="og:image" content="https://bristolbachata.co.uk/main.jpg">
     <meta property="og:image:alt" content="Jan Tabaka, founder of Bristol Bachata">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bristol Bachata | Bachata Classes & Parties in Bristol">
-    <meta name="twitter:description" content="Bachata classes every Monday & Wednesday for all levels, plus Friday & Saturday parties. No partner needed.">
+    <meta name="twitter:title" content="Bristol Bachata | Bachata Classes &amp; Parties in Bristol">
+    <meta name="twitter:description" content="Bachata classes every Monday &amp; Wednesday for all levels, plus Friday &amp; Saturday parties. No partner needed.">
     <meta name="twitter:image" content="https://bristolbachata.co.uk/main.jpg">
+
+    <!-- Structured data: business -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": [
-    "LocalBusiness",
-    "EducationalOrganization"
-  ],
+  "@type": ["LocalBusiness", "EducationalOrganization"],
   "@id": "https://bristolbachata.co.uk/#business",
   "name": "Bristol Bachata",
   "description": "Bachata dance school and community in Bristol. Weekly Monday and Wednesday split-level classes for all levels, Friday and Saturday parties, private lessons and monthly passes. No partner needed.",
   "url": "https://bristolbachata.co.uk/",
   "logo": "https://bristolbachata.co.uk/logo.jpg",
-  "image": [
-    "https://bristolbachata.co.uk/main.jpg",
-    "https://bristolbachata.co.uk/totosweekly.jpg"
-  ],
+  "image": ["https://bristolbachata.co.uk/main.jpg", "https://bristolbachata.co.uk/totosweekly.jpg"],
   "telephone": "+447951514058",
   "priceRange": "££",
-  "founder": {
-    "@type": "Person",
-    "name": "Jan Tabaka"
-  },
+  "founder": { "@type": "Person", "name": "Jan Tabaka" },
   "foundingDate": "2018",
   "address": {
     "@type": "PostalAddress",
@@ -175,175 +113,57 @@
     "postalCode": "BS1 6HU",
     "addressCountry": "GB"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Bristol"
-  },
+  "areaServed": { "@type": "City", "name": "Bristol" },
   "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Wednesday"
-      ],
-      "opens": "19:30",
-      "closes": "23:15"
-    }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Wednesday"], "opens": "19:30", "closes": "23:15" }
   ],
-  "knowsAbout": [
-    "Bachata",
-    "Sensual bachata",
-    "Bachata Moderna",
-    "Dominican bachata",
-    "Bachazouk"
-  ],
-  "sameAs": [
-    "https://www.facebook.com/bachatabristol/",
-    "https://www.instagram.com/bristolbachata/"
-  ],
+  "knowsAbout": ["Bachata", "Sensual bachata", "Bachata Moderna", "Dominican bachata", "Bachazouk"],
+  "sameAs": ["https://www.facebook.com/bachatabristol/", "https://www.instagram.com/bristolbachata/"],
   "makesOffer": [
-    {
-      "@type": "Offer",
-      "name": "Social only",
-      "price": "6",
-      "priceCurrency": "GBP"
-    },
-    {
-      "@type": "Offer",
-      "name": "Single class plus social",
-      "price": "10",
-      "priceCurrency": "GBP"
-    },
-    {
-      "@type": "Offer",
-      "name": "Full night pass (2 classes plus social)",
-      "price": "14",
-      "priceCurrency": "GBP"
-    },
-    {
-      "@type": "Offer",
-      "name": "Monthly pass, one night a week",
-      "price": "46",
-      "priceCurrency": "GBP"
-    },
-    {
-      "@type": "Offer",
-      "name": "Monthly all-in pass, Monday and Wednesday",
-      "price": "80",
-      "priceCurrency": "GBP"
-    },
-    {
-      "@type": "Offer",
-      "name": "Private 1-on-1 class (1 hour)",
-      "price": "65",
-      "priceCurrency": "GBP"
-    },
-    {
-      "@type": "Offer",
-      "name": "Private 1-on-1 block of 5 hours",
-      "price": "300",
-      "priceCurrency": "GBP"
-    }
+    { "@type": "Offer", "name": "Social only", "price": "6", "priceCurrency": "GBP" },
+    { "@type": "Offer", "name": "Single class plus social", "price": "10", "priceCurrency": "GBP" },
+    { "@type": "Offer", "name": "Full night pass (2 classes plus social)", "price": "14", "priceCurrency": "GBP" },
+    { "@type": "Offer", "name": "Monthly pass, one night a week", "price": "46", "priceCurrency": "GBP" },
+    { "@type": "Offer", "name": "Monthly all-in pass, Monday and Wednesday", "price": "80", "priceCurrency": "GBP" },
+    { "@type": "Offer", "name": "Private 1-on-1 class (1 hour)", "price": "65", "priceCurrency": "GBP" },
+    { "@type": "Offer", "name": "Private 1-on-1 block of 5 hours", "price": "300", "priceCurrency": "GBP" }
   ]
 }
     </script>
+
+    <!-- Structured data: FAQ (keep in sync with the visible FAQ below) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is bachata, and what should I expect on my first night?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bachata is a partner dance that began in the Dominican Republic. It's smooth, romantic and all about connection, danced to music with a steady, easy-to-follow beat. It's one of the most popular Latin dances in the world, and a great one to start with. At Bristol Bachata we teach Sensual, Moderna, Dominican and Bachazouk-influenced styles. Here's how your night will go: Arrive and say hello. Come a few minutes early, and a friendly face will point you to the right group. Class (7:30 to 9:30 PM). Beginners start from the basics: the steps, the rhythm and how to move with a partner. Other levels run alongside at the same time. Party and practice social (9:45 to 11:15 PM). Put what you've learned into practice, grab a drink and enjoy the music. There's no pressure, so dance as much or as little as you like. You don't need any experience, a partner or special clothes. Everyone was a beginner once, and our community loves helping newcomers feel at home."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a partner to join?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not at all! Most people come on their own. In class we rotate partners, so you'll dance with lots of different people and meet the community along the way."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "I've never danced before. Is this class for me?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. We run split-level classes (Beginners, Improvers, Intermediate and Advanced) at the same time, so you learn at your own pace with a teacher guiding your level. Your first class is free if you're an absolute beginner. Just message us on WhatsApp to register."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When and where are the classes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Classes run every Monday and Wednesday at Toto's By The River, 125 Redcliff St, Bristol, BS1 6HU. Classes are from 7:30 to 9:30 PM, followed by the party and practice social until 11:15 PM. Our Friday and Saturday parties are held at Docklands. Check the schedule above for the next date."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does it cost, and how do I book?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A full night (two classes plus the social) is £14, a single class plus the social is £10, and the social only is £6. You can book in advance on our online store, which is highly recommended, where monthly passes are also available. You can also pay at the door by cash or card."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What styles of bachata do you teach?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We specialise in Sensual, Moderna, Dominican and Bachazouk-influenced bachata. Our 11 teachers focus on connection and technique, so you'll build a strong foundation whatever style you end up loving most."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there parking, and what should I know before I arrive?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "There is free parking after 6 PM on the single yellow lines nearby, spots limited."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I wear, and do I need special dance shoes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No special dance shoes needed! Wear something comfortable that you can move in. For shoes, pick something comfortable with a smooth, flexible sole that lets you pivot and glide easily. Very grippy soles can be hard on your knees and ankles when turning. Some people like to dress up a little for the social, but it's completely up to you."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer monthly passes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! If you're ready to commit, monthly passes are available on our online store. They're a great way to keep improving week after week, and you can see the current options and prices there."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to pre-book, or can I pay on the door?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can do either. Booking in advance on our online store is highly recommended, as it guarantees your place and makes for a smoother entry. If you decide last minute, you're welcome to turn up and pay at the door by cash or card."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I know which level to join?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We teach different levels at the same time: Beginners, Improvers, Intermediate and Advanced. If you've never danced bachata, or only done it a handful of times, start in Beginners. If you're not sure, just ask a teacher when you arrive and we'll point you to the right group. You can always move up as you progress."
-      }
-    }
+    { "@type": "Question", "name": "What is bachata, and what should I expect on my first night?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bachata is a partner dance that began in the Dominican Republic. It's smooth, romantic and all about connection, danced to music with a steady, easy-to-follow beat. It's one of the most popular Latin dances in the world, and a great one to start with. At Bristol Bachata we teach Sensual, Moderna, Dominican and Bachazouk-influenced styles. Your night: arrive and say hello a few minutes early and a friendly face will point you to the right group. Class (7:30 to 9:30 PM): beginners start from the basics, the steps, the rhythm and how to move with a partner, while other levels run alongside. Party and practice social (9:45 to 11:15 PM): put what you've learned into practice, grab a drink and enjoy the music with no pressure. You don't need any experience, a partner or special clothes. Everyone was a beginner once, and our community loves helping newcomers feel at home." } },
+    { "@type": "Question", "name": "Do I need a partner to join?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not at all! Most people come on their own. In class we rotate partners, so you'll dance with lots of different people and meet the community along the way." } },
+    { "@type": "Question", "name": "I've never danced before. Is this class for me?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We run split-level classes (Beginners, Improvers, Intermediate and Advanced) at the same time, so you learn at your own pace with a teacher guiding your level. Your first class is free if you're an absolute beginner. Just message us on WhatsApp to register." } },
+    { "@type": "Question", "name": "When and where are the classes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Classes run every Monday and Wednesday at Toto's By The River, 125 Redcliff St, Bristol, BS1 6HU. Classes are from 7:30 to 9:30 PM, followed by the party and practice social until 11:15 PM. Our Friday and Saturday parties are held at Docklands. Check the schedule above for the next date." } },
+    { "@type": "Question", "name": "How much does it cost, and how do I book?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A full night (two classes plus the social) is £14, a single class plus the social is £10, and the social only is £6. You can book in advance on our online store, which is highly recommended, where monthly passes are also available. You can also pay at the door by cash or card." } },
+    { "@type": "Question", "name": "What styles of bachata do you teach?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We specialise in Sensual, Moderna, Dominican and Bachazouk-influenced bachata. Our 11 teachers focus on connection and technique, so you'll build a strong foundation whatever style you end up loving most." } },
+    { "@type": "Question", "name": "Is there parking, and what should I know before I arrive?",
+      "acceptedAnswer": { "@type": "Answer", "text": "There is free parking after 6 PM on the single yellow lines nearby, spots limited." } },
+    { "@type": "Question", "name": "What should I wear, and do I need special dance shoes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No special dance shoes needed! Wear something comfortable that you can move in. For shoes, pick something comfortable with a smooth, flexible sole that lets you pivot and glide easily. Very grippy soles can be hard on your knees and ankles when turning. Some people like to dress up a little for the social, but it's completely up to you." } },
+    { "@type": "Question", "name": "Do you offer monthly passes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes! If you're ready to commit, monthly passes are available on our online store. They're a great way to keep improving week after week, and you can see the current options and prices there." } },
+    { "@type": "Question", "name": "Do I need to pre-book, or can I pay on the door?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can do either. Booking in advance on our online store is highly recommended, as it guarantees your place and makes for a smoother entry. If you decide last minute, you're welcome to turn up and pay at the door by cash or card." } },
+    { "@type": "Question", "name": "How do I know which level to join?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We teach different levels at the same time: Beginners, Improvers, Intermediate and Advanced. If you've never danced bachata, or only done it a handful of times, start in Beginners. If you're not sure, just ask a teacher when you arrive and we'll point you to the right group. You can always move up as you progress." } }
   ]
 }
     </script>
-    <!-- Event data: update (or remove) after each party so it never goes out of date -->
+
+    <!-- Structured data: events. Update or remove each event after the party so it never goes out of date -->
     <script type="application/ld+json">
 [
   {
@@ -355,48 +175,17 @@
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "description": "Classes 8:00-10:15pm then social party 10:30pm-1:30am, 90% bachata plus salsa and kizomba. No partner needed, all levels welcome.",
-    "image": [
-      "https://bristolbachata.co.uk/6Nov.jpg"
-    ],
-    "performer": {
-      "@type": "Person",
-      "name": "DJ Jan (Jan Tabaka)"
-    },
+    "image": ["https://bristolbachata.co.uk/6Nov.jpg"],
+    "performer": { "@type": "Person", "name": "DJ Jan (Jan Tabaka)" },
     "location": {
       "@type": "Place",
       "name": "Docklands Community Centre",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "29 Brigstocke Road",
-        "addressLocality": "Bristol",
-        "postalCode": "BS2 8UA",
-        "addressCountry": "GB"
-      }
+      "address": { "@type": "PostalAddress", "streetAddress": "29 Brigstocke Road", "addressLocality": "Bristol", "postalCode": "BS2 8UA", "addressCountry": "GB" }
     },
-    "organizer": {
-      "@type": "Organization",
-      "name": "Bristol Bachata",
-      "url": "https://bristolbachata.co.uk/"
-    },
+    "organizer": { "@type": "Organization", "name": "Bristol Bachata", "url": "https://bristolbachata.co.uk/" },
     "offers": [
-      {
-        "@type": "Offer",
-        "name": "Class + Party",
-        "price": "20",
-        "priceCurrency": "GBP",
-        "validFrom": "2026-10-18T00:00:00+01:00",
-        "url": "https://bristolbachata.sumupstore.com",
-        "availability": "https://schema.org/InStock"
-      },
-      {
-        "@type": "Offer",
-        "name": "Party only",
-        "price": "14",
-        "priceCurrency": "GBP",
-        "validFrom": "2026-10-18T00:00:00+01:00",
-        "url": "https://bristolbachata.sumupstore.com",
-        "availability": "https://schema.org/InStock"
-      }
+      { "@type": "Offer", "name": "Class + Party", "price": "20", "priceCurrency": "GBP", "validFrom": "2026-10-18T00:00:00+01:00", "url": "https://bristolbachata.sumupstore.com", "availability": "https://schema.org/InStock" },
+      { "@type": "Offer", "name": "Party only", "price": "14", "priceCurrency": "GBP", "validFrom": "2026-10-18T00:00:00+01:00", "url": "https://bristolbachata.sumupstore.com", "availability": "https://schema.org/InStock" }
     ]
   },
   {
@@ -408,61 +197,37 @@
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "description": "Complimentary class 8:15-9pm then social party 9pm-1am, 90% bachata plus salsa and kizomba. No partner needed, all levels welcome.",
-    "image": [
-      "https://bristolbachata.co.uk/20nov.jpg"
-    ],
-    "performer": {
-      "@type": "Person",
-      "name": "DJ Jan (Jan Tabaka)"
-    },
+    "image": ["https://bristolbachata.co.uk/20nov.jpg"],
+    "performer": { "@type": "Person", "name": "DJ Jan (Jan Tabaka)" },
     "location": {
       "@type": "Place",
       "name": "Docklands Community Centre",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "29 Brigstocke Road",
-        "addressLocality": "Bristol",
-        "postalCode": "BS2 8UA",
-        "addressCountry": "GB"
-      }
+      "address": { "@type": "PostalAddress", "streetAddress": "29 Brigstocke Road", "addressLocality": "Bristol", "postalCode": "BS2 8UA", "addressCountry": "GB" }
     },
-    "organizer": {
-      "@type": "Organization",
-      "name": "Bristol Bachata",
-      "url": "https://bristolbachata.co.uk/"
-    },
-    "offers": {
-      "@type": "Offer",
-      "name": "Party with complimentary class",
-      "price": "12",
-      "priceCurrency": "GBP",
-      "validFrom": "2026-10-18T00:00:00+01:00",
-      "url": "https://bristolbachata.sumupstore.com",
-      "availability": "https://schema.org/InStock"
-    }
+    "organizer": { "@type": "Organization", "name": "Bristol Bachata", "url": "https://bristolbachata.co.uk/" },
+    "offers": { "@type": "Offer", "name": "Party with complimentary class", "price": "12", "priceCurrency": "GBP", "validFrom": "2026-10-18T00:00:00+01:00", "url": "https://bristolbachata.sumupstore.com", "availability": "https://schema.org/InStock" }
   }
 ]
     </script>
 </head>
 <body class="antialiased selection:bg-bbGreen selection:text-black">
 
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     <header class="fixed w-full top-0 z-50 bg-bbDark/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0 flex items-center">
-    <a href="#" class="flex items-center gap-3 font-heading text-2xl font-bold tracking-tighter text-white">
-        <img src="logo.jpg" alt="Bristol Bachata logo" width="122" height="56" class="h-14 w-30 object-contain rounded-full" onerror="this.style.display='Bristol Bachata'">
-    </a>
-               </div>
-                
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#" class="flex items-center" aria-label="Bristol Bachata home">
+                    <img src="logo.jpg" alt="Bristol Bachata logo" width="122" height="56" class="logo-img object-contain rounded-full">
+                </a>
+
+                <!-- Desktop menu -->
+                <nav class="hidden md:flex space-x-8 items-center" aria-label="Main">
                     <a href="#about" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">About</a>
-                    
                     <details class="schedule-dropdown inline-block">
                         <summary class="text-gray-300 hover:text-bbGreen transition-colors font-medium flex items-center gap-2 px-1 py-2 rounded-md">
                             Classes Timetable
-                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                            <i class="fa-solid fa-chevron-down text-xs" aria-hidden="true"></i>
                         </summary>
                         <div class="schedule-submenu">
                             <a href="#classes">Mon &amp; Wed Classes</a>
@@ -472,7 +237,6 @@
                     <a href="#pricing" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">Pricing</a>
                     <a href="#etiquette" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">Etiquette</a>
                     <a href="#contact" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">Contact</a>
-                    <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-bbGreen transition-colors font-medium">Store</a>
                     <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="bg-bbGreen text-black hover:bg-bbGreenHover px-6 py-2.5 rounded-full font-heading font-semibold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(74,222,128,0.3)]">
                         Book Now
                     </a>
@@ -480,52 +244,47 @@
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" aria-label="Open menu" class="text-gray-300 hover:text-white focus:outline-none p-2">
-                        <i class="fa-solid fa-bars text-2xl"></i>
+                    <button id="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="text-gray-300 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Menu -->
+        <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-bbCard border-b border-white/10">
-            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3 flex flex-col">
+            <nav class="px-2 pt-2 pb-4 space-y-1 sm:px-3 flex flex-col" aria-label="Mobile">
                 <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">About</a>
-
                 <details class="schedule-dropdown w-full">
-                    <summary class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen cursor-pointer flex items-center justify-between">
+                    <summary class="px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen cursor-pointer flex items-center justify-between">
                         <span>Classes Timetable</span>
-                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                        <i class="fa-solid fa-chevron-down text-xs" aria-hidden="true"></i>
                     </summary>
                     <div class="schedule-submenu">
                         <a href="#classes">Mon &amp; Wed Classes</a>
                         <a href="#parties">Weekend Events</a>
                     </div>
                 </details>
-
                 <a href="#pricing" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">Pricing</a>
                 <a href="#etiquette" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">Etiquette</a>
                 <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">Contact</a>
-                <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-bbGreen">Store</a>
-                <a href="https://bristolbachata.sumupstore.com" target="_blank" class="block px-3 py-2 mt-2 text-center text-base font-heading font-bold bg-bbGreen text-black rounded-lg">Book Now</a>
-            </div>
+                <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 mt-2 text-center text-base font-heading font-bold bg-bbGreen text-black rounded-lg">Book Now</a>
+            </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main">
 
-        <section id="hero" class="relative h-screen flex items-center justify-center pt-20 bg-bbDark">
-            <!-- Background Video -->
+        <!-- ===================== HERO ===================== -->
+        <section id="hero" class="relative flex items-center justify-center bg-bbDark">
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <video id="hero-video" class="w-full h-full object-cover opacity-90" style="opacity:0;transition:opacity 1.2s ease" muted loop playsinline preload="none" aria-hidden="true" data-src="hero-video.mp4">
-                </video>
+                <video id="hero-video" class="w-full h-full object-cover opacity-90" style="opacity:0;transition:opacity 1.2s ease" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" data-src="hero-video.mp4"></video>
                 <div class="absolute inset-0 bg-gradient-to-b from-bbDark/80 via-bbDark/60 to-bbDark"></div>
             </div>
 
-            <!-- Hero Content -->
-            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto>
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
                 <span class="inline-block py-1 px-3 rounded-full bg-bbGreen/20 text-bbGreen font-semibold text-sm tracking-wider uppercase mb-6 border border-bbGreen/30 shadow-[0_0_10px_rgba(74,222,128,0.2)]">
-                    Your Ultimate Bachata Journey Starts Here
+                    Bachata Classes &amp; Parties in Bristol
                 </span>
                 <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight mb-6 tracking-tight">
                     FEEL THE <span class="text-transparent bg-clip-text bg-gradient-to-r from-bbGreen to-emerald-300">VIBE.</span><br>
@@ -535,8 +294,8 @@
                     Bristol’s home for bachata. Learn, Dance, Socialise. Join one of the biggest, most established, complete and friendliest bachata communities in the UK. No partner needed. Everyone welcome!
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://bristolbachata.sumupstore.com" class="bg-bbGreen text-black hover:bg-bbGreenHover px-8 py-4 rounded-full font-heading font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(74,222,128,0.3)]">
-                        Book Classes & Tickets
+                    <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="bg-bbGreen text-black hover:bg-bbGreenHover px-8 py-4 rounded-full font-heading font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(74,222,128,0.3)]">
+                        Book Classes &amp; Tickets
                     </a>
                     <a href="#classes" class="bg-white/10 text-white hover:bg-white/20 border border-white/20 px-8 py-4 rounded-full font-heading font-bold text-lg transition-all backdrop-blur-sm">
                         View Schedule
@@ -545,8 +304,7 @@
             </div>
         </section>
 
-
-        
+        <!-- ===================== ABOUT ===================== -->
         <section id="about" class="py-24 bg-bbDark overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -559,18 +317,17 @@
                                 Founded over 8 years ago by international artist <strong class="text-white">Jan Tabaka</strong>, Bristol Bachata school (featured on <strong class="text-bbGreen">BBC One and BBC Four</strong>) is the heartbeat of the South West’s Latin dance scene. Having taught at top international festivals across Dubai, France, Turkey, Spain, and Greece, Jan and the team bring world-class instruction directly to Bristol.
                             </p>
                             <p>
-                               From <strong class="text-white">Zero to Hero.</strong> we build solid fundamentals with a fun, relaxed, yet highly technical approach. Whether you're an absolute beginner stepping onto the floor for the first time or an advanced dancer pushing your limits, we guide you step-by-step through Sensual, Moderna, Dominican, BachaZouk, and Influence styles.
+                                From <strong class="text-white">Zero to Hero.</strong> We build solid fundamentals with a fun, relaxed, yet highly technical approach. Whether you're an absolute beginner stepping onto the floor for the first time or an advanced dancer pushing your limits, we guide you step-by-step through Sensual, Moderna, Dominican, BachaZouk, and Influence styles.
                             </p>
                             <p>
-                               Expect a complete dance ecosystem: friendly drop-in weekly classes, technical masterclasses, weekend parties, summer outdoor events and much more. Our proven methodology has empowered thousands to fall in love with dance, raising UK Bachata champions and instructors in the UK all the way to Australia.
+                                Expect a complete dance ecosystem: friendly drop-in weekly classes, technical masterclasses, weekend parties, summer outdoor events and much more. Our proven methodology has empowered thousands to fall in love with dance, raising UK Bachata champions and instructors in the UK all the way to Australia.
                             </p>
-                            <p> 
+                            <p>
                                 <strong class="text-white">Come for the dance, stay for the vibes and community!</strong>
                             </p>
                         </div>
                         <div class="mt-8 flex items-center gap-6">
-                            <div class="flex -space-x-4">
-                                <!-- Decorative community avatars -->
+                            <div class="flex -space-x-4" aria-hidden="true">
                                 <div class="w-12 h-12 rounded-full bg-gray-700 border-2 border-bbDark flex items-center justify-center"><i class="fa-solid fa-user text-gray-400"></i></div>
                                 <div class="w-12 h-12 rounded-full bg-gray-600 border-2 border-bbDark flex items-center justify-center"><i class="fa-solid fa-user text-gray-300"></i></div>
                                 <div class="w-12 h-12 rounded-full bg-bbGreen border-2 border-bbDark flex items-center justify-center"><i class="fa-solid fa-users text-black"></i></div>
@@ -579,105 +336,83 @@
                         </div>
                     </div>
                     <div class="fade-in-section relative">
-                        <!-- Image Container with decorative elements -->
                         <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                            <img src="main.jpg" alt="Jan Tabaka, founder and head instructor of Bristol Bachata" loading="lazy" decoding="async" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/800x800/171717/4ade80?text=Jan+Tabaka'">
+                            <img src="main.jpg" alt="Jan Tabaka, founder and head instructor of Bristol Bachata" width="900" height="900" loading="lazy" decoding="async" class="w-full h-auto object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                                <h3 class="text-2xl font-bold font-heading text-white">Jan Tabaka</h3>
-                                <p class="text-bbGreen font-medium">Founder, Head Instructor & International Teacher</p>
+                                <p class="text-2xl font-bold font-heading text-white">Jan Tabaka</p>
+                                <p class="text-bbGreen font-medium">Founder, Head Instructor &amp; International Teacher</p>
                             </div>
                         </div>
-                        <!-- Decorative background blob -->
                         <div class="absolute -top-10 -right-10 w-64 h-64 bg-bbGreen/20 rounded-full blur-3xl -z-10"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-     <section id="classes" class="py-24 bg-bbCard border-y border-white/5 relative overflow-hidden">
-            <!-- Decorative background blob -->
+        <!-- ===================== MON & WED CLASSES ===================== -->
+        <section id="classes" class="py-24 bg-bbCard border-y border-white/5 relative overflow-hidden">
             <div class="absolute top-1/2 left-0 w-96 h-96 bg-bbGreen/10 rounded-full blur-3xl -z-10 transform -translate-y-1/2 -translate-x-1/2"></div>
-            
+
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">
                     <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Classes</span>
-                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Mon & Wed Classes</h2>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Mon &amp; Wed Classes</h2>
                     <p class="text-gray-400 text-lg">Split group classes so you learn at your own pace, guided by 11 passionate teachers.</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <!-- Schedule Info -->
                     <div class="space-y-8 fade-in-section">
                         <div class="bg-bbDark p-8 rounded-2xl border border-white/10 hover:border-bbGreen/50 transition-colors">
                             <div class="flex items-center gap-4 mb-4">
-                                <div class="w-12 h-12 rounded-full bg-bbGreen/20 flex items-center justify-center text-bbGreen">
-                                    <i class="fa-regular fa-calendar-days text-2xl"></i>
+                                <div class="w-12 h-12 rounded-full bg-bbGreen/20 flex items-center justify-center text-bbGreen flex-shrink-0">
+                                    <i class="fa-regular fa-calendar-days text-2xl" aria-hidden="true"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-2xl font-heading font-bold text-white">Mondays & Wednesdays</h3>
-                                    <p class="text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-bbGreen"></i>Totos By The River, 125 Redcliff St, BS1 6HU</p>
+                                    <h3 class="text-2xl font-heading font-bold text-white">Mondays &amp; Wednesdays</h3>
+                                    <p class="text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-bbGreen" aria-hidden="true"></i>Totos By The River, 125 Redcliff St, BS1 6HU</p>
                                 </div>
                             </div>
                             <ul class="space-y-4 mt-6">
                                 <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
-                                    <div class="bg-bbCard text-bbGreen font-bold px-3 py-1 rounded text-sm mt-0.5">7:30 - 9:30 PM</div>
+                                    <div class="bg-bbCard text-bbGreen font-bold px-3 py-1 rounded text-sm mt-0.5 whitespace-nowrap">7:30 - 9:30 PM</div>
                                     <div>
                                         <h4 class="text-lg font-bold text-white">Split Level Classes</h4>
-                                        <p class="text-gray-400 text-sm mt-1">Beginners, Improvers, Intermediate & Advanced running simultaneously.</p>
+                                        <p class="text-gray-400 text-sm mt-1">Beginners, Improvers, Intermediate &amp; Advanced running simultaneously.</p>
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
-                                    <div class="bg-bbCard text-bbGreen font-bold px-3 py-1 rounded text-sm mt-0.5">9:45 - 11:15 PM</div>
+                                    <div class="bg-bbCard text-bbGreen font-bold px-3 py-1 rounded text-sm mt-0.5 whitespace-nowrap">9:45 - 11:15 PM</div>
                                     <div>
-                                        <h4 class="text-lg font-bold text-white">Party & Practice Social</h4>
+                                        <h4 class="text-lg font-bold text-white">Party &amp; Practice Social</h4>
                                         <p class="text-gray-400 text-sm mt-1">Apply what you learned, grab a drink, socialise and dance the night away!</p>
                                     </div>
                                 </li>
                             </ul>
-                            <div class="mt-6 inline-block bg-bbGreen/10 border border-bbGreen/30 text-bbGreen px-4 py-2 rounded-lg font-medium">
-                                <i class="fa-solid fa-gift mr-2"></i><a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%20would%20like%20to%20register%20for%20my%20free%20first%20bachata%20class%20as%20an%20absolute%20beginner." 
-                                target="_blank" style="color: #25D366; font-weight: bold; text-decoration: none;"> FREE first class for new absolute beginners 
-                                    <p>(Click here to register)</p> </a>
-                            </div>
+                            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%20would%20like%20to%20register%20for%20my%20free%20first%20bachata%20class%20as%20an%20absolute%20beginner." target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-bbGreen/10 border border-bbGreen/30 text-bbGreen px-4 py-2 rounded-lg font-bold">
+                                <i class="fa-solid fa-gift mr-2" aria-hidden="true"></i>FREE first class for new absolute beginners
+                                <span class="block text-sm font-medium">Click here to register on WhatsApp</span>
+                            </a>
                         </div>
 
                         <div class="bg-gradient-to-br from-bbDark to-black p-8 rounded-2xl border border-white/10">
                             <h3 class="text-xl font-heading font-bold text-white mb-4">More Than Just Weekly Classes</h3>
                             <ul class="space-y-3 text-gray-300">
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-fire text-bbGreen"></i> Epic Friday & Saturday Parties @ Docklands (scroll down)</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-graduation-cap text-bbGreen"></i> Private 1-on-1 Bachata Coaching</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-champagne-glasses text-bbGreen"></i> Special Events: Hen Parties, Birthdays, Festivals & more</li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-fire text-bbGreen" aria-hidden="true"></i> Epic Friday &amp; Saturday Parties @ Docklands (scroll down)</li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-graduation-cap text-bbGreen" aria-hidden="true"></i> Private 1-on-1 Bachata Coaching</li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-champagne-glasses text-bbGreen" aria-hidden="true"></i> Special Events: Hen Parties, Birthdays, Festivals &amp; more</li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- Image / All Levels graphic -->
                     <div class="fade-in-section">
-                        <img src="totosweekly.jpg" alt="Bristol Bachata weekly classes poster: Mondays and Wednesdays at Totos By The River, 125 Redcliff St, Bristol" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl" onerror="this.src='https://placehold.co/800x1000/171717/4ade80?text=All+Levels+Welcome'">
+                        <img src="totosweekly.jpg" alt="Bristol Bachata weekly classes poster: Mondays and Wednesdays at Totos By The River, 125 Redcliff St, Bristol" width="1080" height="1080" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl">
                     </div>
                 </div>
             </div>
         </section>
 
-<!-- Scroll Animation Script (Add this just above your closing -->
-<script>
-    function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 100;
-            if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add("active");
-            }
-        }
-    }
-    window.addEventListener("scroll", reveal);
-    reveal(); // Trigger once on load
-</script>
-        
-
-       <section id="pricing" class="py-24 bg-bbDark border-y border-white/5">
+        <!-- ===================== PRICING ===================== -->
+        <section id="pricing" class="py-24 bg-bbDark border-y border-white/5">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">
                     <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Simple Pricing</span>
@@ -686,7 +421,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in-section">
-                    <!-- Pricing Card 1 -->
                     <div class="bg-bbCard p-8 rounded-2xl border border-white/10 flex flex-col hover:-translate-y-2 transition-transform duration-300">
                         <h3 class="text-xl font-bold text-white mb-2">Single Class</h3>
                         <p class="text-gray-400 mb-6 flex-grow">1 hour of class instruction + the social party afterwards.</p>
@@ -694,10 +428,9 @@
                             <span class="text-4xl font-heading font-extrabold text-white">£10</span>
                             <span class="text-gray-400">/ night</span>
                         </div>
-                        <a href="https://bristolbachata.sumupstore.com/product/mon-or-wed-1-class" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors mt-auto">Book Now</a>
+                        <a href="https://bristolbachata.sumupstore.com/product/mon-or-wed-1-class" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors mt-auto">Book Single Class</a>
                     </div>
 
-                    <!-- Pricing Card 2 (Highlighted) -->
                     <div class="bg-gradient-to-b from-bbCard to-[#1a2f20] p-8 rounded-2xl border-2 border-bbGreen shadow-[0_0_30px_rgba(74,222,128,0.15)] flex flex-col transform md:-translate-y-4 relative">
                         <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bbGreen text-black font-bold px-4 py-1 rounded-full text-sm">
                             MOST POPULAR
@@ -709,14 +442,13 @@
                             <span class="text-gray-400">/ night</span>
                         </div>
                         <ul class="space-y-3 mb-8 text-gray-300 text-sm">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen"></i> 2x 1-hour Classes</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen"></i> Access to all levels</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen"></i> Free Social Entry</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen" aria-hidden="true"></i> 2x 1-hour Classes</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen" aria-hidden="true"></i> Access to all levels</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen" aria-hidden="true"></i> Free Social Entry</li>
                         </ul>
                         <a href="https://bristolbachata.sumupstore.com/product/mon-or-wed-2-classes" class="w-full block text-center bg-bbGreen hover:bg-bbGreenHover text-black font-bold py-4 rounded-xl transition-colors shadow-lg mt-auto">Book Full Pass</a>
                     </div>
 
-                    <!-- Pricing Card 3 -->
                     <div class="bg-bbCard p-8 rounded-2xl border border-white/10 flex flex-col hover:-translate-y-2 transition-transform duration-300">
                         <h3 class="text-xl font-bold text-white mb-2">Social Only</h3>
                         <p class="text-gray-400 mb-6 flex-grow">Join us for the party and practice time from 9:45 PM.</p>
@@ -724,19 +456,18 @@
                             <span class="text-4xl font-heading font-extrabold text-white">£6</span>
                             <span class="text-gray-400">/ night</span>
                         </div>
-                        <a href="https://bristolbachata.sumupstore.com/product/mon-or-wed-party-only" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors">Book Now</a>
+                        <a href="https://bristolbachata.sumupstore.com/product/mon-or-wed-party-only" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors mt-auto">Book Social Only</a>
                     </div>
                 </div>
-                
-                   <!-- ===================== MONTHLY PASSES ===================== -->
+
+                <!-- Monthly passes -->
                 <div class="mt-24 text-center max-w-3xl mx-auto mb-12 fade-in-section">
                     <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Looking to commit?</span>
                     <h3 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Monthly Passes</h3>
                     <p class="text-gray-400 text-lg">Pay once a month and dance every week. Buy online, or message us on WhatsApp to set up a regular standing order.</p>
                 </div>
- 
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto fade-in-section">
-                    <!-- Monthly: one night a week -->
                     <div class="bg-bbCard p-8 rounded-2xl border border-white/10 flex flex-col hover:-translate-y-2 transition-transform duration-300">
                         <h4 class="text-xl font-bold text-white mb-2">Monthly Pass: One Night a Week</h4>
                         <p class="text-gray-400 mb-6">One event a week. Choose Monday or Wednesday.</p>
@@ -745,16 +476,15 @@
                             <span class="text-gray-400">/ month (25% OFF)</span>
                         </div>
                         <ul class="space-y-3 mb-8 text-gray-300 text-sm">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen"></i> 2 classes & party at 1 event per week: Mon or Wed</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen"></i> Access to all levels</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen" aria-hidden="true"></i> 2 classes &amp; party at 1 event per week: Mon <em>or</em> Wed</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen" aria-hidden="true"></i> Access to all levels</li>
                         </ul>
                         <div class="mt-auto space-y-3">
-                            <a href="https://bristolbachata.sumupstore.com/product/bristol-bachata-monthly-pass-mon-or-wed-1day-wk-silver-25-off" target="_blank" rel="noopener noreferrer" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors">Buy Online</a>
-                            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%27d%20like%20to%20set%20up%20a%20standing%20order%20for%20the%20%C2%A346%20a%20month%20Monthly%20Pass%20(one%20night%20a%20week)." target="_blank" rel="noopener noreferrer" class="w-full block text-center border border-bbGreen/50 text-bbGreen hover:bg-bbGreen hover:text-black font-bold py-3 rounded-xl transition-colors"><i class="fa-brands fa-whatsapp mr-2"></i>Pay by Standing Order</a>
+                            <a href="https://bristolbachata.sumupstore.com/product/bristol-bachata-monthly-pass-mon-or-wed-1day-wk-silver-25-off" target="_blank" rel="noopener noreferrer" aria-label="Buy online: monthly pass, one night a week" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors">Buy Online</a>
+                            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%27d%20like%20to%20set%20up%20a%20standing%20order%20for%20the%20%C2%A346%20a%20month%20Monthly%20Pass%20(one%20night%20a%20week)." target="_blank" rel="noopener noreferrer" aria-label="Pay by standing order for the £46 monthly pass, via WhatsApp" class="w-full block text-center border border-bbGreen/50 text-bbGreen hover:bg-bbGreen hover:text-black font-bold py-3 rounded-xl transition-colors"><i class="fa-brands fa-whatsapp mr-2" aria-hidden="true"></i>Pay by Standing Order</a>
                         </div>
                     </div>
- 
-                    <!-- Monthly: all inclusive -->
+
                     <div class="bg-gradient-to-b from-bbCard to-[#1a2f20] p-8 rounded-2xl border-2 border-bbGreen shadow-[0_0_30px_rgba(74,222,128,0.15)] flex flex-col relative hover:-translate-y-2 transition-transform duration-300">
                         <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bbGreen text-black font-bold px-4 py-1 rounded-full text-sm">
                             BEST VALUE
@@ -766,25 +496,24 @@
                             <span class="text-gray-400">/ month (35% OFF)</span>
                         </div>
                         <ul class="space-y-3 mb-8 text-gray-300 text-sm">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen"></i> All in classes & parties at 2 events per week: Mon <strong class="text-white">&amp;</strong> Wed</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen"></i> Access to all levels</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen" aria-hidden="true"></i> All in classes &amp; parties at 2 events per week: Mon <strong class="text-white">&amp;</strong> Wed</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-bbGreen" aria-hidden="true"></i> Access to all levels</li>
                         </ul>
                         <div class="mt-auto space-y-3">
-                            <a href="https://bristolbachata.sumupstore.com/product/bristol-bachata-monthly-pass-mon-and-wed-2days-wk-gold-35-off" target="_blank" rel="noopener noreferrer" class="w-full block text-center bg-bbGreen hover:bg-bbGreenHover text-black font-bold py-3 rounded-xl transition-colors shadow-lg">Buy Online</a>
-                            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%27d%20like%20to%20set%20up%20a%20standing%20order%20for%20the%20%C2%A380%20a%20month%20All-In%20Monthly%20Pass%20(Monday%20%26%20Wednesday)." target="_blank" rel="noopener noreferrer" class="w-full block text-center border border-bbGreen/50 text-bbGreen hover:bg-bbGreen hover:text-black font-bold py-3 rounded-xl transition-colors"><i class="fa-brands fa-whatsapp mr-2"></i>Pay by Standing Order</a>
+                            <a href="https://bristolbachata.sumupstore.com/product/bristol-bachata-monthly-pass-mon-and-wed-2days-wk-gold-35-off" target="_blank" rel="noopener noreferrer" aria-label="Buy online: monthly all-in pass" class="w-full block text-center bg-bbGreen hover:bg-bbGreenHover text-black font-bold py-3 rounded-xl transition-colors shadow-lg">Buy Online</a>
+                            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%27d%20like%20to%20set%20up%20a%20standing%20order%20for%20the%20%C2%A380%20a%20month%20All-In%20Monthly%20Pass%20(Monday%20%26%20Wednesday)." target="_blank" rel="noopener noreferrer" aria-label="Pay by standing order for the £80 all-in pass, via WhatsApp" class="w-full block text-center border border-bbGreen/50 text-bbGreen hover:bg-bbGreen hover:text-black font-bold py-3 rounded-xl transition-colors"><i class="fa-brands fa-whatsapp mr-2" aria-hidden="true"></i>Pay by Standing Order</a>
                         </div>
                     </div>
                 </div>
 
-                               <!-- ===================== PRIVATE 1-ON-1 LESSONS ===================== -->
+                <!-- Private lessons -->
                 <div class="mt-24 text-center max-w-3xl mx-auto mb-12 fade-in-section">
                     <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Learn Faster</span>
                     <h3 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Private 1-on-1 Lessons</h3>
                     <p class="text-gray-400 text-lg">Personal coaching with Jan, tailored to your level and goals. Book online or message me on WhatsApp.</p>
                 </div>
- 
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto fade-in-section">
-                    <!-- Single private -->
                     <div class="bg-bbCard p-8 rounded-2xl border border-white/10 flex flex-col hover:-translate-y-2 transition-transform duration-300">
                         <h4 class="text-xl font-bold text-white mb-2">1 Private Class</h4>
                         <p class="text-gray-400 mb-6">One hour of 1-on-1 coaching.</p>
@@ -793,12 +522,11 @@
                             <span class="text-gray-400">/ hour</span>
                         </div>
                         <div class="mt-auto space-y-3">
-                            <a href="https://bristolbachata.sumupstore.com/product/private-1-2-1-bachata-class-with-jan-1hr" target="_blank" rel="noopener noreferrer" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors">Buy online</a>
-                            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%27m%20keen%20to%20do%20privates%20with%20you.%20I%27d%20like%20to%20book%201%20private%20class%20(%C2%A365%20per%20hour)." target="_blank" rel="noopener noreferrer" class="w-full block text-center border border-bbGreen/50 text-bbGreen hover:bg-bbGreen hover:text-black font-bold py-3 rounded-xl transition-colors"><i class="fa-brands fa-whatsapp mr-2"></i>Message Me on WhatsApp</a>
+                            <a href="https://bristolbachata.sumupstore.com/product/private-1-2-1-bachata-class-with-jan-1hr" target="_blank" rel="noopener noreferrer" aria-label="Buy online: 1 private class" class="w-full block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-colors">Buy Online</a>
+                            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%27m%20keen%20to%20do%20privates%20with%20you.%20I%27d%20like%20to%20book%201%20private%20class%20(%C2%A365%20per%20hour)." target="_blank" rel="noopener noreferrer" aria-label="Message me on WhatsApp to book 1 private class" class="w-full block text-center border border-bbGreen/50 text-bbGreen hover:bg-bbGreen hover:text-black font-bold py-3 rounded-xl transition-colors"><i class="fa-brands fa-whatsapp mr-2" aria-hidden="true"></i>Message Me on WhatsApp</a>
                         </div>
                     </div>
- 
-                    <!-- Block of 5 -->
+
                     <div class="bg-gradient-to-b from-bbCard to-[#1a2f20] p-8 rounded-2xl border-2 border-bbGreen shadow-[0_0_30px_rgba(74,222,128,0.15)] flex flex-col relative hover:-translate-y-2 transition-transform duration-300">
                         <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bbGreen text-black font-bold px-4 py-1 rounded-full text-sm">
                             SAVE £25
@@ -810,158 +538,151 @@
                             <span class="text-gray-400">/ 5 hours</span>
                         </div>
                         <div class="mt-auto space-y-3">
-                            <a href="https://bristolbachata.sumupstore.com/product/private-1-2-1-bachata-classes-with-jan-5-x-1-hr-20-off" target="_blank" rel="noopener noreferrer" class="w-full block text-center bg-bbGreen hover:bg-bbGreenHover text-black font-bold py-3 rounded-xl transition-colors shadow-lg">Buy online</a>
-                            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%27m%20keen%20to%20do%20privates%20with%20you.%20I%27d%20like%20to%20book%20the%20block%20of%205%20private%20hours%20(%C2%A3300)." target="_blank" rel="noopener noreferrer" class="w-full block text-center border border-bbGreen/50 text-bbGreen hover:bg-bbGreen hover:text-black font-bold py-3 rounded-xl transition-colors"><i class="fa-brands fa-whatsapp mr-2"></i>Message Me on WhatsApp</a>
+                            <a href="https://bristolbachata.sumupstore.com/product/private-1-2-1-bachata-classes-with-jan-5-x-1-hr-20-off" target="_blank" rel="noopener noreferrer" aria-label="Buy online: block of 5 private hours" class="w-full block text-center bg-bbGreen hover:bg-bbGreenHover text-black font-bold py-3 rounded-xl transition-colors shadow-lg">Buy Online</a>
+                            <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%27m%20keen%20to%20do%20privates%20with%20you.%20I%27d%20like%20to%20book%20the%20block%20of%205%20private%20hours%20(%C2%A3300)." target="_blank" rel="noopener noreferrer" aria-label="Message me on WhatsApp to book the block of 5 private hours" class="w-full block text-center border border-bbGreen/50 text-bbGreen hover:bg-bbGreen hover:text-black font-bold py-3 rounded-xl transition-colors"><i class="fa-brands fa-whatsapp mr-2" aria-hidden="true"></i>Message Me on WhatsApp</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <!-- ===================== WEEKEND PARTIES ===================== -->
         <section id="parties" class="py-24 bg-bbCard border-y border-white/5 relative overflow-hidden">
-            <!-- Decorative background blob -->
             <div class="absolute top-1/2 right-0 w-96 h-96 bg-bbGreen/10 rounded-full blur-3xl -z-10 transform -translate-y-1/2 translate-x-1/2"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">
                     <span class="text-bbGreen font-bold tracking-wider uppercase text-sm mb-2 block">Weekend Events</span>
-                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Friday & Saturday Parties</h2>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Friday &amp; Saturday Parties</h2>
                     <p class="text-gray-400 text-lg">Our biggest nights out: great music, great people and a packed dance floor at Docklands.</p>
                 </div>
 
                 <div class="space-y-20">
 
-                <!-- ===== Fri 6 Nov PARTY ===== -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <!-- Party info -->
-                    <div class="fade-in-section">
-                        <div class="bg-bbDark p-8 rounded-2xl border border-white/10 hover:border-bbGreen/50 transition-colors">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="w-12 h-12 rounded-full bg-bbGreen/20 flex items-center justify-center text-bbGreen flex-shrink-0">
-                                    <i class="fa-solid fa-champagne-glasses text-2xl"></i>
+                    <!-- Fri 6 Nov -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                        <div class="fade-in-section">
+                            <div class="bg-bbDark p-8 rounded-2xl border border-white/10 hover:border-bbGreen/50 transition-colors">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="w-12 h-12 rounded-full bg-bbGreen/20 flex items-center justify-center text-bbGreen flex-shrink-0">
+                                        <i class="fa-solid fa-champagne-glasses text-2xl" aria-hidden="true"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-heading font-bold text-white">Friday Bachata Party</h3>
+                                        <p class="text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-bbGreen" aria-hidden="true"></i>Docklands, Bristol</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 class="text-2xl font-heading font-bold text-white">Friday Bachata Party</h3>
-                                    <p class="text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-bbGreen"></i>Docklands, Bristol</p>
+
+                                <div class="mt-6 p-5 rounded-xl bg-bbGreen/10 border border-bbGreen/30">
+                                    <span class="inline-block py-1 px-3 rounded-full bg-bbGreen text-black font-bold text-xs tracking-wider uppercase mb-3">Next Party</span>
+                                    <p class="text-xl font-heading font-bold text-white">Friday 6th November 2026</p>
+                                </div>
+
+                                <ul class="space-y-4 mt-6">
+                                    <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+                                        <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Fri 6 Nov</div>
+                                        <div class="min-w-0">
+                                            <h4 class="text-lg font-bold text-white">Friday Bachata Party</h4>
+                                            <p class="text-gray-400 text-sm mt-1">8:00 – 10:15pm: Classes<br>10:30pm – 1:30am: Social Party (90% Bachata + Salsa &amp; Kizomba) with DJ Jan</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+                                        <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Venue</div>
+                                        <div class="min-w-0">
+                                            <h4 class="text-lg font-bold text-white">Docklands</h4>
+                                            <p class="text-gray-400 text-sm mt-1">Docklands Community Centre, BS2 8UA</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+                                        <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Tickets</div>
+                                        <div class="min-w-0">
+                                            <h4 class="text-lg font-bold text-white">Class + Party £20 · Party only £14</h4>
+                                            <p class="text-gray-400 text-sm mt-1">Book online or pay on the door cash/card. Come solo or with friends, BYOB, no bar on site, free parking outside, all levels welcome.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                                    <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-center bg-bbGreen text-black hover:bg-bbGreenHover px-6 py-3 rounded-full font-heading font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(74,222,128,0.3)]">
+                                        Get Tickets
+                                    </a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="mt-6 p-5 rounded-xl bg-bbGreen/10 border border-bbGreen/30">
-                                <span class="inline-block py-1 px-3 rounded-full bg-bbGreen text-black font-bold text-xs tracking-wider uppercase mb-3">Next Party</span>
-                                <h4 class="text-xl font-heading font-bold text-white">Friday 6th November 2026</h4>
-                            </div>
-
-                            <ul class="space-y-4 mt-6">
-                                <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
-                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Fri 6 Nov</div>
-                                    <div class="min-w-0">
-                                        <h4 class="text-lg font-bold text-white">Friday Bachata Party</h4>
-                                        <p class="text-gray-400 text-sm mt-1">8:00 – 10:15pm: Classes<br>10:30pm – 1:30am: Social Party (90% Bachata + Salsa &amp; Kizomba) with DJ Jan</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
-                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Venue</div>
-                                    <div class="min-w-0">
-                                        <h4 class="text-lg font-bold text-white">Docklands</h4>
-                                        <p class="text-gray-400 text-sm mt-1">Docklands Community Centre, BS28UA</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
-                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Tickets</div>
-                                    <div class="min-w-0">
-                                        <h4 class="text-lg font-bold text-white">Class + Party £20 · Party only £14</h4>
-                                        <p class="text-gray-400 text-sm mt-1">Book online or pay on the door cash/card. Come solo or with friends, BYOB, no bar on site, free parking outside, all levels welcome.</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="mt-6 flex flex-col sm:flex-row gap-3">
-                                <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-center bg-bbGreen text-black hover:bg-bbGreenHover px-6 py-3 rounded-full font-heading font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(74,222,128,0.3)]">
-                                    Get Tickets
-                                </a>
-                            </div>
+                        <div class="fade-in-section">
+                            <img src="6Nov.jpg" alt="Bristol Bachata party poster: Friday 6 November 2026 at Docklands Community Centre, Bristol" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl">
                         </div>
                     </div>
 
-                    <!-- Party poster -->
-                    <div class="fade-in-section">
-                        <img src="6Nov.jpg" alt="Bristol Bachata party poster: Friday 6 November 2026 at Docklands Community Centre, Bristol" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl" onerror="this.src='https://placehold.co/800x1000/171717/4ade80?text=Friday+6+Nov+Party'">
-                    </div>
-                </div>
-
-                <!-- ===== Fri 20 Nov PARTY ===== -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <!-- Party info -->
-                    <div class="fade-in-section">
-                        <div class="bg-bbDark p-8 rounded-2xl border border-white/10 hover:border-bbGreen/50 transition-colors">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="w-12 h-12 rounded-full bg-bbGreen/20 flex items-center justify-center text-bbGreen flex-shrink-0">
-                                    <i class="fa-solid fa-champagne-glasses text-2xl"></i>
+                    <!-- Fri 20 Nov -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                        <div class="fade-in-section">
+                            <div class="bg-bbDark p-8 rounded-2xl border border-white/10 hover:border-bbGreen/50 transition-colors">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="w-12 h-12 rounded-full bg-bbGreen/20 flex items-center justify-center text-bbGreen flex-shrink-0">
+                                        <i class="fa-solid fa-champagne-glasses text-2xl" aria-hidden="true"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-heading font-bold text-white">Friday Bachata Party</h3>
+                                        <p class="text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-bbGreen" aria-hidden="true"></i>Docklands, Bristol</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 class="text-2xl font-heading font-bold text-white">Friday Bachata Party</h3>
-                                    <p class="text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-bbGreen"></i>Docklands, Bristol</p>
+
+                                <div class="mt-6 p-5 rounded-xl bg-bbGreen/10 border border-bbGreen/30">
+                                    <span class="inline-block py-1 px-3 rounded-full bg-bbGreen text-black font-bold text-xs tracking-wider uppercase mb-3">Following Party</span>
+                                    <p class="text-xl font-heading font-bold text-white">Friday 20th November 2026</p>
+                                </div>
+
+                                <ul class="space-y-4 mt-6">
+                                    <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+                                        <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Fri 20 Nov</div>
+                                        <div class="min-w-0">
+                                            <h4 class="text-lg font-bold text-white">Friday Bachata Party</h4>
+                                            <p class="text-gray-400 text-sm mt-1">8:15 – 9:00pm: Complimentary class<br>9:00pm – 1:00am: Social Party (90% Bachata + Salsa &amp; Kizomba) with DJ Jan</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+                                        <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Venue</div>
+                                        <div class="min-w-0">
+                                            <h4 class="text-lg font-bold text-white">Docklands</h4>
+                                            <p class="text-gray-400 text-sm mt-1">Docklands Community Centre, BS2 8UA</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+                                        <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Tickets</div>
+                                        <div class="min-w-0">
+                                            <h4 class="text-lg font-bold text-white">£12 · Party with complimentary class</h4>
+                                            <p class="text-gray-400 text-sm mt-1">One price for the whole night, class included. Book online or pay on the door cash/card. Come solo or with friends, BYOB, no bar on site, free parking outside, all levels welcome.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                                    <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-center bg-bbGreen text-black hover:bg-bbGreenHover px-6 py-3 rounded-full font-heading font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(74,222,128,0.3)]">
+                                        Get Tickets
+                                    </a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="mt-6 p-5 rounded-xl bg-bbGreen/10 border border-bbGreen/30">
-                                <span class="inline-block py-1 px-3 rounded-full bg-bbGreen text-black font-bold text-xs tracking-wider uppercase mb-3">Following Party</span>
-                                <h4 class="text-xl font-heading font-bold text-white">Friday 20th November 2026</h4>
-                            </div>
-
-                            <ul class="space-y-4 mt-6">
-                                <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
-                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Fri 20 Nov</div>
-                                    <div class="min-w-0">
-                                        <h4 class="text-lg font-bold text-white">Friday Bachata Party</h4>
-                                        <p class="text-gray-400 text-sm mt-1">8:15 – 9:00pm: Complimentary class<br>9:00pm – 1:00am: Social Party (90% Bachata + Salsa &amp; Kizomba) with DJ Jan</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
-                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Venue</div>
-                                    <div class="min-w-0">
-                                        <h4 class="text-lg font-bold text-white">Docklands</h4>
-                                        <p class="text-gray-400 text-sm mt-1">Docklands Community Centre, BS28UA</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
-                                    <div class="w-24 sm:w-28 flex-shrink-0 text-center whitespace-nowrap bg-bbCard text-bbGreen font-bold px-2 py-1 rounded text-sm mt-0.5">Tickets</div>
-                                    <div class="min-w-0">
-                                        <h4 class="text-lg font-bold text-white">£12 · Party with complimentary class</h4>
-                                        <p class="text-gray-400 text-sm mt-1">One price for the whole night, class included. Book online or pay on the door cash/card. Come solo or with friends, BYOB, no bar on site, free parking outside, all levels welcome.</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="mt-6 flex flex-col sm:flex-row gap-3">
-                                <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-center bg-bbGreen text-black hover:bg-bbGreenHover px-6 py-3 rounded-full font-heading font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(74,222,128,0.3)]">
-                                    Get Tickets
-                                </a>
-                            </div>
+                        <div class="fade-in-section">
+                            <img src="20nov.jpg" alt="Bristol Bachata party poster: Friday 20 November 2026 at Docklands Community Centre, Bristol" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl">
                         </div>
                     </div>
 
-                    <!-- Party poster -->
-                    <div class="fade-in-section">
-                        <img src="20nov.jpg" alt="Bristol Bachata party poster: Friday 20 November 2026 at Docklands Community Centre, Bristol" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl" onerror="this.src='https://placehold.co/800x1000/171717/4ade80?text=Friday+20+Nov+Party'">
-                    </div>
                 </div>
 
-                </div>
-
-                <!-- More dates -->
                 <div class="mt-16 max-w-3xl mx-auto text-center fade-in-section">
                     <div class="bg-gradient-to-br from-bbDark to-black p-6 rounded-2xl border border-white/10">
-                        <p class="text-gray-300"><i class="fa-solid fa-calendar-plus text-bbGreen mr-2"></i><strong class="text-white">Also coming up:</strong> Fri 4th Dec &amp; Sat 19th Dec. More details and posters coming soon.</p>
+                        <p class="text-gray-300"><i class="fa-solid fa-calendar-plus text-bbGreen mr-2" aria-hidden="true"></i><strong class="text-white">Also coming up:</strong> Fri 4th Dec &amp; Sat 19th Dec. More details and posters coming soon.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <!-- ===================== FAQ ===================== -->
         <section id="faq" class="py-24 bg-bbDark border-t border-white/5 relative overflow-hidden">
-            <!-- Decorative background blob -->
             <div class="absolute top-1/2 left-0 w-96 h-96 bg-bbGreen/10 rounded-full blur-3xl -z-10 transform -translate-y-1/2 -translate-x-1/2"></div>
 
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -973,14 +694,10 @@
 
                 <div class="space-y-4 fade-in-section">
 
-                     
-                    <!-- What is bachata / what to expect -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">What is bachata, and what should I expect on my first night?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed space-y-4">
                             <p>
@@ -989,9 +706,9 @@
                             <div>
                                 <p class="text-white font-semibold mb-2">Here's how your night will go:</p>
                                 <ul class="space-y-2">
-                                    <li class="flex items-start gap-3"><i class="fa-solid fa-door-open text-bbGreen mt-1"></i><span><strong class="text-white">Arrive and say hello.</strong> Come a few minutes early, and a friendly face will point you to the right group.</span></li>
-                                    <li class="flex items-start gap-3"><i class="fa-solid fa-graduation-cap text-bbGreen mt-1"></i><span><strong class="text-white">Class (7:30 to 9:30 PM).</strong> Beginners start from the basics: the steps, the rhythm and how to move with a partner. Other levels run alongside at the same time.</span></li>
-                                    <li class="flex items-start gap-3"><i class="fa-solid fa-champagne-glasses text-bbGreen mt-1"></i><span><strong class="text-white">Party and practice social (9:45 to 11:15 PM).</strong> Put what you've learned into practice, grab a drink and enjoy the music. There's no pressure, so dance as much or as little as you like.</span></li>
+                                    <li class="flex items-start gap-3"><i class="fa-solid fa-door-open text-bbGreen mt-1" aria-hidden="true"></i><span><strong class="text-white">Arrive and say hello.</strong> Come a few minutes early, and a friendly face will point you to the right group.</span></li>
+                                    <li class="flex items-start gap-3"><i class="fa-solid fa-graduation-cap text-bbGreen mt-1" aria-hidden="true"></i><span><strong class="text-white">Class (7:30 to 9:30 PM).</strong> Beginners start from the basics: the steps, the rhythm and how to move with a partner. Other levels run alongside at the same time.</span></li>
+                                    <li class="flex items-start gap-3"><i class="fa-solid fa-champagne-glasses text-bbGreen mt-1" aria-hidden="true"></i><span><strong class="text-white">Party and practice social (9:45 to 11:15 PM).</strong> Put what you've learned into practice, grab a drink and enjoy the music. There's no pressure, so dance as much or as little as you like.</span></li>
                                 </ul>
                             </div>
                             <p>
@@ -1000,130 +717,100 @@
                         </div>
                     </details>
 
-                    
-                    <!-- Q1 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">Do I need a partner to join?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
                             Not at all! Most people come on their own. In class we rotate partners, so you'll dance with lots of different people and meet the community along the way.
                         </div>
                     </details>
 
-                    <!-- Q2 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">I've never danced before. Is this class for me?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
                             Absolutely. We run split-level classes (Beginners, Improvers, Intermediate and Advanced) at the same time, so you learn at your own pace with a teacher guiding your level. Your first class is <strong class="text-white">free</strong> if you're an absolute beginner. Just <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%20would%20like%20to%20register%20for%20my%20free%20first%20bachata%20class%20as%20an%20absolute%20beginner." target="_blank" rel="noopener noreferrer" class="text-bbGreen underline hover:text-white transition-colors">message us on WhatsApp to register</a>.
                         </div>
                     </details>
 
-                    <!-- Q3 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">When and where are the classes?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
                             Classes run every <strong class="text-white">Monday and Wednesday</strong> at Toto's By The River, 125 Redcliff St, Bristol, BS1 6HU. Classes are from 7:30 to 9:30 PM, followed by the party and practice social until 11:15 PM. Our Friday and Saturday parties are held at Docklands. Check the schedule above for the next date.
                         </div>
                     </details>
 
-                    <!-- Q4 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">How much does it cost, and how do I book?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
                             A full night (two classes plus the social) is <strong class="text-white">£14</strong>, a single class plus the social is <strong class="text-white">£10</strong>, and the social only is <strong class="text-white">£6</strong>. You can book in advance on our <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-bbGreen underline hover:text-white transition-colors">online store</a>, which is highly recommended, where monthly passes are also available. You can also pay at the door by cash or card.
                         </div>
                     </details>
 
-                    <!-- Q5 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">What styles of bachata do you teach?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
                             We specialise in <strong class="text-white">Sensual, Moderna, Dominican and Bachazouk-influenced bachata</strong>. Our 11 teachers focus on connection and technique, so you'll build a strong foundation whatever style you end up loving most.
                         </div>
                     </details>
 
-                    <!-- Q6 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">Is there parking, and what should I know before I arrive?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
-                            There is free parking after 6 PM on the single yellow lines nearby, spots limited. </div>
+                            There is free parking after 6 PM on the single yellow lines nearby, spots limited.
+                        </div>
                     </details>
 
-                    <!-- Q7 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">What should I wear, and do I need special dance shoes?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
-                            No special dance shoes needed! Wear something comfortable that you can move in. For shoes, pick something comfortable with a smooth, flexible sole that lets you pivot and glide easily. Very grippy soles can be hard on your knees and ankles when turning. Some people like to dress up a little for the social, but it's completely up to you. 
+                            No special dance shoes needed! Wear something comfortable that you can move in. For shoes, pick something comfortable with a smooth, flexible sole that lets you pivot and glide easily. Very grippy soles can be hard on your knees and ankles when turning. Some people like to dress up a little for the social, but it's completely up to you.
                         </div>
                     </details>
 
-                    <!-- Q8 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">Do you offer monthly passes?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
-                            Yes! If you're ready to commit, monthly passes are available on our <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-bbGreen underline hover:text-white transition-colors">online store</a>. They're a great way to keep improving week after week, and you can see the current options and prices there.     
+                            Yes! If you're ready to commit, monthly passes are available on our <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-bbGreen underline hover:text-white transition-colors">online store</a>. They're a great way to keep improving week after week, and you can see the current options and prices there.
                         </div>
                     </details>
 
-                    <!-- Q9 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">Do I need to pre-book, or can I pay on the door?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
                             You can do either. Booking in advance on our <a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="text-bbGreen underline hover:text-white transition-colors">online store</a> is highly recommended, as it guarantees your place and makes for a smoother entry. If you decide last minute, you're welcome to turn up and pay at the door by cash or card.
                         </div>
                     </details>
 
-                    <!-- Q10 -->
                     <details class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">How do I know which level to join?</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
                             We teach different levels at the same time: <strong class="text-white">Beginners, Improvers, Intermediate and Advanced</strong>. If you've never danced bachata, or only done it a handful of times, start in Beginners. If you're not sure, just ask a teacher when you arrive and we'll point you to the right group. You can always move up as you progress.
@@ -1132,62 +819,59 @@
 
                 </div>
 
-                <!-- Still have a question? -->
                 <div class="mt-12 text-center fade-in-section">
                     <p class="text-gray-300 text-lg mb-4">Can't find the answer you're looking for?</p>
                     <a href="https://wa.me/447951514058?text=Hi%20Jan!%20I%20have%20a%20question%20about%20Bristol%20Bachata." target="_blank" rel="noopener noreferrer" class="inline-block bg-white/10 text-white hover:bg-bbGreen hover:text-black border border-white/20 hover:border-bbGreen px-8 py-4 rounded-full font-heading font-bold transition-all transform hover:scale-105">
-                        <i class="fa-brands fa-whatsapp mr-2"></i>Ask a Question
+                        <i class="fa-brands fa-whatsapp mr-2" aria-hidden="true"></i>Ask a Question
                     </a>
                 </div>
             </div>
         </section>
 
-
+        <!-- ===================== ETIQUETTE ===================== -->
         <section id="etiquette" class="py-24 bg-bbCard border-t border-white/5">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-                    
-                    <!-- Image -->
+
                     <div class="lg:col-span-2 fade-in-section">
-                        <img src="codeofconduct.JPG" alt="Bristol Bachata dance floor etiquette and code of conduct" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl" onerror="this.src='https://placehold.co/600x800/171717/4ade80?text=Dance+Floor+Vibes'">
+                        <img src="codeofconduct.JPG" alt="Bristol Bachata dance floor etiquette and code of conduct" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl">
                     </div>
 
-                    <!-- Etiquette Rules -->
                     <div class="lg:col-span-3 fade-in-section">
-                        <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Dance Floor <span class="text-bbGreen">Vibes & Etiquette</span></h2>
+                        <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Dance Floor <span class="text-bbGreen">Vibes &amp; Etiquette</span></h2>
                         <p class="text-xl text-gray-300 mb-8 font-light italic border-l-4 border-bbGreen pl-4">Keep it fun, safe, and respectful for everyone!</p>
-                        
+
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div class="bg-bbDark p-5 rounded-xl border border-white/5">
-                                <h4 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-soap text-bbGreen text-xl"></i> Stay Fresh</h4>
+                                <h3 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-soap text-bbGreen text-xl" aria-hidden="true"></i> Stay Fresh</h3>
                                 <p class="text-gray-400 text-sm">Arrive clean, with deodorant and fresh breath.</p>
                             </div>
                             <div class="bg-bbDark p-5 rounded-xl border border-white/5">
-                                <h4 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-ear-listen text-bbGreen text-xl"></i> Respect the Class</h4>
+                                <h3 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-ear-listen text-bbGreen text-xl" aria-hidden="true"></i> Respect the Class</h3>
                                 <p class="text-gray-400 text-sm">Listen to teachers when they're explaining. No talking over them.</p>
                             </div>
                             <div class="bg-bbDark p-5 rounded-xl border border-white/5">
-                                <h4 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-handshake-angle text-bbGreen text-xl"></i> Mind the Space</h4>
+                                <h3 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-handshake-angle text-bbGreen text-xl" aria-hidden="true"></i> Mind the Space</h3>
                                 <p class="text-gray-400 text-sm">Respect your partner's boundaries and personal space.</p>
                             </div>
                             <div class="bg-bbDark p-5 rounded-xl border border-white/5">
-                                <h4 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-ban text-red-400 text-xl"></i> Safe Hands</h4>
+                                <h3 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-ban text-red-400 text-xl" aria-hidden="true"></i> Safe Hands</h3>
                                 <p class="text-gray-400 text-sm">Keep holds safe, respectful, and never force a move.</p>
                             </div>
                             <div class="bg-bbDark p-5 rounded-xl border border-white/5">
-                                <h4 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-bullseye text-bbGreen text-xl"></i> Meet Their Level</h4>
+                                <h3 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-bullseye text-bbGreen text-xl" aria-hidden="true"></i> Meet Their Level</h3>
                                 <p class="text-gray-400 text-sm">Don't try tricky moves or "teach" on the social floor.</p>
                             </div>
                             <div class="bg-bbDark p-5 rounded-xl border border-white/5">
-                                <h4 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-person-walking-arrow-right text-bbGreen text-xl"></i> Watch the Floor</h4>
+                                <h3 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-person-walking-arrow-right text-bbGreen text-xl" aria-hidden="true"></i> Watch the Floor</h3>
                                 <p class="text-gray-400 text-sm">Avoid collisions, and look out for others around you.</p>
                             </div>
                             <div class="bg-bbDark p-5 rounded-xl border border-white/5">
-                                <h4 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-heart text-red-500 text-xl"></i> OK to Say No</h4>
+                                <h3 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-heart text-red-500 text-xl" aria-hidden="true"></i> OK to Say No</h3>
                                 <p class="text-gray-400 text-sm">If you feel uncomfortable, it's totally okay to decline a dance.</p>
                             </div>
                             <div class="bg-bbDark p-5 rounded-xl border border-white/5">
-                                <h4 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-siren-on text-red-500 text-xl"></i> We've Got Your Back</h4>
+                                <h3 class="font-bold text-white text-lg flex items-center gap-3 mb-2"><i class="fa-solid fa-shield-halved text-red-500 text-xl" aria-hidden="true"></i> We've Got Your Back</h3>
                                 <p class="text-gray-400 text-sm">Spot something off? Tell myself or a member of our team!</p>
                             </div>
                         </div>
@@ -1196,18 +880,19 @@
             </div>
         </section>
 
-
+        <!-- ===================== TERMS ===================== -->
         <section id="terms" class="py-16 bg-bbDark border-t border-white/5">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
                 <h2 class="font-heading text-2xl md:text-3xl font-bold text-white mb-6">Terms <span class="text-bbGreen">&amp; Conditions</span></h2>
                 <ul class="space-y-4 text-gray-400 leading-relaxed">
-                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-bbGreen mt-1.5"></i><span>Each event participant agrees and is obliged to respect this <a href="#etiquette" class="text-bbGreen underline hover:text-white transition-colors">Code of Conduct</a> or may be denied entry.</span></li>
-                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-bbGreen mt-1.5"></i><span>Purchased tickets are valid for the date and person named on the ticket. Tickets are non-refundable and non-transferable. If you would like to change the person’s name on the ticket please <a href="https://wa.me/447951514058?text=Hi%20Bristol%20Bachata!" target="_blank" rel="noopener noreferrer" class="text-bbGreen underline hover:text-white transition-colors">contact Bristol Bachata</a> prior to the event.</span></li>
-                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-bbGreen mt-1.5"></i><span>With each purchase your email may be added to the newsletter list which you have a right to unsubscribe from.</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-bbGreen mt-1.5" aria-hidden="true"></i><span>Each event participant agrees and is obliged to respect this <a href="#etiquette" class="text-bbGreen underline hover:text-white transition-colors">Code of Conduct</a> or may be denied entry.</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-bbGreen mt-1.5" aria-hidden="true"></i><span>Purchased tickets are valid for the date and person named on the ticket. Tickets are non-refundable and non-transferable. If you would like to change the person’s name on the ticket please <a href="https://wa.me/447951514058?text=Hi%20Bristol%20Bachata!" target="_blank" rel="noopener noreferrer" class="text-bbGreen underline hover:text-white transition-colors">contact Bristol Bachata</a> prior to the event.</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-bbGreen mt-1.5" aria-hidden="true"></i><span>With each purchase your email may be added to the newsletter list which you have a right to unsubscribe from.</span></li>
                 </ul>
             </div>
         </section>
 
+        <!-- ===================== PRIVACY & COOKIES ===================== -->
         <section id="privacy" class="py-16 bg-bbCard border-t border-white/5">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
                 <h2 class="font-heading text-2xl md:text-3xl font-bold text-white mb-6">Privacy <span class="text-bbGreen">&amp; Cookies</span></h2>
@@ -1216,9 +901,7 @@
                     <details id="privacy-policy" class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors scroll-mt-28">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">Privacy Policy</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-5 pb-6 text-gray-400 leading-relaxed text-sm md:text-base space-y-3">
                             <p class="text-gray-400 text-sm">Last updated: 17 October 2026</p>
@@ -1233,9 +916,7 @@
                     <details id="cookies" class="group bg-bbCard rounded-2xl border border-white/10 hover:border-bbGreen/50 open:border-bbGreen/50 transition-colors scroll-mt-28">
                         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 [&::-webkit-details-marker]:hidden">
                             <span class="font-heading font-semibold text-lg text-white">Cookie Policy</span>
-                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
+                            <span class="flex-shrink-0 w-9 h-9 rounded-full bg-bbGreen/20 text-bbGreen flex items-center justify-center transition-transform duration-300 group-open:rotate-180"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                         </summary>
                         <div class="px-5 pb-6 text-gray-400 leading-relaxed text-sm md:text-base space-y-3">
                             <p class="text-gray-400 text-sm">Last updated: 17 October 2026</p>
@@ -1253,61 +934,60 @@
         </section>
 
     </main>
-      <footer id="contact" class="bg-black pt-20 pb-10 border-t border-white/10">
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="contact" class="bg-black pt-20 pb-10 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                <!-- Brand -->
+
                 <div class="lg:col-span-1">
-                    <a href="#" class="font-heading text-3xl font-bold tracking-tighter text-white block mb-4">
-                     <img src="logo.jpg" alt="Bristol Bachata logo" width="122" height="56" class="h-14 w-30 object-contain rounded-full" onerror="this.style.display='Bristol Bachata'">
+                    <a href="#" class="block mb-4" aria-label="Bristol Bachata home">
+                        <img src="logo.jpg" alt="Bristol Bachata logo" width="122" height="56" loading="lazy" decoding="async" class="logo-img object-contain rounded-full">
                     </a>
-                    
                     <p class="text-gray-400 mb-6">Bristol’s home for bachata. Learn, Dance, Socialise. Join one of the biggest, most established, complete and friendliest bachata communities in the UK. Your ultimate bachata journey starts here.</p>
                     <p class="text-white font-semibold mb-3">Follow us</p>
                     <div class="flex flex-wrap gap-3">
                         <a href="https://www.facebook.com/bachatabristol/" target="_blank" rel="noopener noreferrer" aria-label="Join the Bristol Bachata Facebook group" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/10 text-white hover:bg-bbGreen hover:text-black font-medium transition-colors">
-                            <i class="fa-brands fa-facebook-f"></i> Facebook
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Facebook
                         </a>
-                        <!-- TODO: replace YOUR_INSTAGRAM_HANDLE with your real Instagram username -->
                         <a href="https://www.instagram.com/bristolbachata/" target="_blank" rel="noopener noreferrer" aria-label="Follow Bristol Bachata on Instagram" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/10 text-white hover:bg-bbGreen hover:text-black font-medium transition-colors">
-                            <i class="fa-brands fa-instagram"></i> Instagram
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
                         </a>
                     </div>
                 </div>
-                <!-- Contact -->
+
                 <div>
-                    <h4 class="text-white font-bold font-heading text-lg mb-6">Contact Us</h4>
+                    <h3 class="text-white font-bold font-heading text-lg mb-6">Contact Us</h3>
                     <ul class="space-y-4 text-gray-400">
                         <li class="flex items-start gap-3">
-                            <i class="fa-brands fa-whatsapp text-bbGreen mt-1 text-xl"></i>
+                            <i class="fa-brands fa-whatsapp text-bbGreen mt-1 text-xl" aria-hidden="true"></i>
                             <div>
                                 <p class="font-medium text-white">WhatsApp / Call</p>
                                 <a href="tel:07951514058" class="hover:text-bbGreen transition-colors">07951 514058</a>
                             </div>
                         </li>
                         <li class="flex items-start gap-3 mt-4">
-                            <i class="fa-regular fa-envelope text-bbGreen mt-1 text-xl"></i>
+                            <i class="fa-regular fa-envelope text-bbGreen mt-1 text-xl" aria-hidden="true"></i>
                             <div>
                                 <p class="font-medium text-white">Email</p>
-                                <a href="mailto:jantabaka@gmail.com" class="hover:text-bbGreen transition-colors">Bristol Bachata</a>
+                                <a href="mailto:jantabaka@gmail.com" class="hover:text-bbGreen transition-colors">jantabaka@gmail.com</a>
                             </div>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Location -->
                 <div>
-                    <h4 class="text-white font-bold font-heading text-lg mb-6">Location</h4>
+                    <h3 class="text-white font-bold font-heading text-lg mb-6">Location</h3>
                     <ul class="space-y-4 text-gray-400">
                         <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-location-dot text-bbGreen mt-1 w-4 text-center"></i>
+                            <i class="fa-solid fa-location-dot text-bbGreen mt-1 w-4 text-center" aria-hidden="true"></i>
                             <div>
-                                <p class="font-medium text-white">Classes (Mon & Wed)</p>
+                                <p class="font-medium text-white">Classes (Mon &amp; Wed)</p>
                                 <p>Totos By The River<br>125 Redcliff St<br>Bristol, BS1 6HU</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-location-dot text-bbGreen mt-1 w-4 text-center"></i>
+                            <i class="fa-solid fa-location-dot text-bbGreen mt-1 w-4 text-center" aria-hidden="true"></i>
                             <div>
                                 <p class="font-medium text-white">Parties (Fri or Sat)</p>
                                 <p>Docklands<br>29 Brigstocke Road<br>Bristol, BS2 8UA</p>
@@ -1316,20 +996,19 @@
                     </ul>
                 </div>
 
-                <!-- Info -->
                 <div>
-                    <h4 class="text-white font-bold font-heading text-lg mb-6">Need to Know</h4>
+                    <h3 class="text-white font-bold font-heading text-lg mb-6">Need to Know</h3>
                     <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-square-parking text-bbGreen mt-1 w-4 text-center"></i><span>All levels covered, classes tailored for you, come for classes, stay for vibes and community!</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-ticket text-bbGreen mt-1 w-4 text-center"></i><span><a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors">Book tickets in advance</a> or drop in and pay on the door.</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-people-group text-bbGreen mt-1 w-4 text-center"></i><span>No partner required! Come solo or with friends, everyone welcome!</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-graduation-cap text-bbGreen mt-1 w-4 text-center" aria-hidden="true"></i><span>All levels covered, classes tailored for you, come for classes, stay for vibes and community!</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-ticket text-bbGreen mt-1 w-4 text-center" aria-hidden="true"></i><span><a href="https://bristolbachata.sumupstore.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors">Book tickets in advance</a> or drop in and pay on the door.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-people-group text-bbGreen mt-1 w-4 text-center" aria-hidden="true"></i><span>No partner required! Come solo or with friends, everyone welcome!</span></li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm text-center md:text-left mb-4 md:mb-0">
-                    &copy; <span id="year"></span> Bristol Bachata (since 2018). All rights reserved.
+                    &copy; <span id="year">2026</span> Bristol Bachata (since 2018). All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-400">
                     <a href="#privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a>
@@ -1341,17 +1020,15 @@
         </div>
     </footer>
 
-
     <!-- ===================== COOKIE CONSENT ===================== -->
-    <div id="cookie-banner" role="dialog" aria-labelledby="cc-title" aria-describedby="cc-text" class="hidden fixed bottom-4 inset-x-4 z-[70] max-w-2xl mx-auto bg-bbCard border border-white/10 rounded-2xl shadow-2xl p-5 md:p-6 max-h-[85vh] overflow-y-auto">
+    <div id="cookie-banner" role="region" aria-label="Cookie choices" class="hidden fixed bottom-4 inset-x-4 z-[70] max-w-2xl mx-auto bg-bbCard border border-white/10 rounded-2xl shadow-2xl p-5 md:p-6 max-h-[85vh] overflow-y-auto">
 
-        <!-- Main view -->
         <div id="cc-main">
             <div class="flex items-center gap-3 mb-2">
-                <i class="fa-solid fa-cookie-bite text-bbGreen text-xl"></i>
-                <h2 id="cc-title" class="font-heading font-bold text-white text-lg">Your cookie choices</h2>
+                <i class="fa-solid fa-cookie-bite text-bbGreen text-xl" aria-hidden="true"></i>
+                <h2 class="font-heading font-bold text-white text-lg">Your cookie choices</h2>
             </div>
-            <p id="cc-text" class="text-gray-400 text-sm leading-relaxed mb-4">
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
                 We only use strictly necessary cookies to keep this site working. You can choose whether to allow optional analytics and marketing cookies, which we may add in future. Read our <a href="#cookies" id="cc-policy-link" class="text-bbGreen underline hover:text-white transition-colors">Cookie Policy</a>.
             </p>
             <div class="flex flex-col sm:flex-row gap-3">
@@ -1361,10 +1038,9 @@
             </div>
         </div>
 
-        <!-- Preferences view -->
         <div id="cc-prefs" class="hidden">
             <div class="flex items-center gap-3 mb-4">
-                <i class="fa-solid fa-sliders text-bbGreen text-xl"></i>
+                <i class="fa-solid fa-sliders text-bbGreen text-xl" aria-hidden="true"></i>
                 <h2 class="font-heading font-bold text-white text-lg">Manage cookie preferences</h2>
             </div>
             <div class="space-y-3 mb-5">
@@ -1375,26 +1051,26 @@
                     </div>
                     <span class="flex-shrink-0 mt-1 text-xs font-bold uppercase tracking-wider text-bbGreen bg-bbGreen/10 border border-bbGreen/30 rounded-full px-3 py-1">Always on</span>
                 </div>
-                    <div class="flex items-start justify-between gap-4 p-4 rounded-xl bg-white/5">
-                        <div>
-                            <label for="cc-analytics" class="font-semibold text-white">Analytics</label>
-                            <p class="text-gray-400 text-sm mt-1">Helps us understand how visitors use the site so we can improve it. We do not currently use any.</p>
-                        </div>
-                        <label class="relative inline-flex items-center cursor-pointer flex-shrink-0 mt-1">
-                            <input id="cc-analytics" type="checkbox" class="peer sr-only">
-                            <span class="w-11 h-6 bg-white/20 rounded-full transition-colors peer-checked:bg-bbGreen peer-focus-visible:ring-2 peer-focus-visible:ring-bbGreen after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:bg-white after:rounded-full after:transition-transform peer-checked:after:translate-x-5"></span>
-                        </label>
+                <div class="flex items-start justify-between gap-4 p-4 rounded-xl bg-white/5">
+                    <div>
+                        <label for="cc-analytics" class="font-semibold text-white">Analytics</label>
+                        <p class="text-gray-400 text-sm mt-1">Helps us understand how visitors use the site so we can improve it. We do not currently use any.</p>
                     </div>
-                    <div class="flex items-start justify-between gap-4 p-4 rounded-xl bg-white/5">
-                        <div>
-                            <label for="cc-marketing" class="font-semibold text-white">Marketing</label>
-                            <p class="text-gray-400 text-sm mt-1">Used to show relevant adverts and measure campaigns. We do not currently use any.</p>
-                        </div>
-                        <label class="relative inline-flex items-center cursor-pointer flex-shrink-0 mt-1">
-                            <input id="cc-marketing" type="checkbox" class="peer sr-only">
-                            <span class="w-11 h-6 bg-white/20 rounded-full transition-colors peer-checked:bg-bbGreen peer-focus-visible:ring-2 peer-focus-visible:ring-bbGreen after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:bg-white after:rounded-full after:transition-transform peer-checked:after:translate-x-5"></span>
-                        </label>
+                    <label class="relative inline-flex items-center cursor-pointer flex-shrink-0 mt-1">
+                        <input id="cc-analytics" type="checkbox" class="peer sr-only">
+                        <span class="w-11 h-6 bg-white/20 rounded-full transition-colors peer-checked:bg-bbGreen peer-focus-visible:ring-2 peer-focus-visible:ring-bbGreen after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:bg-white after:rounded-full after:transition-transform peer-checked:after:translate-x-5"></span>
+                    </label>
+                </div>
+                <div class="flex items-start justify-between gap-4 p-4 rounded-xl bg-white/5">
+                    <div>
+                        <label for="cc-marketing" class="font-semibold text-white">Marketing</label>
+                        <p class="text-gray-400 text-sm mt-1">Used to show relevant adverts and measure campaigns. We do not currently use any.</p>
                     </div>
+                    <label class="relative inline-flex items-center cursor-pointer flex-shrink-0 mt-1">
+                        <input id="cc-marketing" type="checkbox" class="peer sr-only">
+                        <span class="w-11 h-6 bg-white/20 rounded-full transition-colors peer-checked:bg-bbGreen peer-focus-visible:ring-2 peer-focus-visible:ring-bbGreen after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:bg-white after:rounded-full after:transition-transform peer-checked:after:translate-x-5"></span>
+                    </label>
+                </div>
             </div>
             <div class="flex flex-col sm:flex-row gap-3">
                 <button type="button" id="cc-save" class="flex-1 bg-bbGreen text-black hover:bg-bbGreenHover font-heading font-bold py-3 px-5 rounded-full transition-colors">Save my choices</button>
@@ -1404,124 +1080,111 @@
         </div>
     </div>
 
+    <!-- ===================== SCRIPTS (one block) ===================== -->
     <script>
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
+    (function () {
+        var $ = function (id) { return document.getElementById(id); };
 
-        // Mobile menu toggle
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
+        // Footer year
+        $('year').textContent = new Date().getFullYear();
 
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
+        // Mobile menu
+        var btn = $('mobile-menu-btn'), menu = $('mobile-menu');
+        function setMenu(open) {
+            menu.classList.toggle('hidden', !open);
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        }
+        btn.addEventListener('click', function () { setMenu(menu.classList.contains('hidden')); });
+        menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+
+        // Close the Classes Timetable dropdown after choosing a link
+        document.querySelectorAll('.schedule-submenu a').forEach(function (a) {
+            a.addEventListener('click', function () { var d = a.closest('details'); if (d) d.removeAttribute('open'); });
         });
 
-        // Close mobile menu on link click
-        menu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-            });
-        });
-
-        // Intersection Observer for scroll fade-in animations
-        document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.15
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        observer.unobserve(entry.target); // Only animate once
-                    }
+        // Scroll fade-in
+        var fades = document.querySelectorAll('.fade-in-section');
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
                 });
-            }, observerOptions);
+            }, { threshold: 0.15 });
+            fades.forEach(function (el) { io.observe(el); });
+        } else {
+            fades.forEach(function (el) { el.classList.add('is-visible'); });
+        }
 
-            const fadeElements = document.querySelectorAll('.fade-in-section');
-            fadeElements.forEach(el => observer.observe(el));
+        // Hero video: load late, and skip on data saver / slow connections / reduced motion
+        window.addEventListener('load', function () {
+            var v = $('hero-video'), c = navigator.connection || {};
+            if (!v || c.saveData || /(^|-)2g$|3g/.test(c.effectiveType || '') ||
+                (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+            setTimeout(function () {
+                v.addEventListener('playing', function () { v.style.opacity = ''; }, { once: true });
+                v.src = v.getAttribute('data-src');
+                v.load();
+                var p = v.play();
+                if (p && p.catch) p.catch(function () {});
+            }, 1500);
         });
+
+        // Cookie consent. Choice is stored in this browser only and asked again after ~6 months.
+        // Nothing optional runs today. To add analytics/marketing later, load their scripts ONLY
+        // inside the bb-consent listener below, when the matching flag is true.
+        var KEY = 'bb_cookie_consent', MAX_AGE = 180 * 24 * 60 * 60 * 1000;
+        var banner = $('cookie-banner'), main = $('cc-main'), prefs = $('cc-prefs');
+        var analytics = $('cc-analytics'), marketing = $('cc-marketing');
+
+        function read() {
+            try {
+                var v = JSON.parse(localStorage.getItem(KEY));
+                if (v && v.ts && (Date.now() - v.ts) < MAX_AGE) return v;
+            } catch (e) {}
+            return null;
+        }
+        function announce(c) {
+            window.bbConsent = c;
+            try { window.dispatchEvent(new CustomEvent('bb-consent', { detail: c })); } catch (e) {}
+        }
+        function save(a, m) {
+            var c = { necessary: true, analytics: !!a, marketing: !!m, ts: Date.now() };
+            try { localStorage.setItem(KEY, JSON.stringify(c)); } catch (e) {}
+            announce(c);
+            banner.classList.add('hidden');
+        }
+        function show(openPrefs, userOpened) {
+            var c = read() || { analytics: false, marketing: false };
+            analytics.checked = !!c.analytics;
+            marketing.checked = !!c.marketing;
+            main.classList.toggle('hidden', !!openPrefs);
+            prefs.classList.toggle('hidden', !openPrefs);
+            banner.classList.remove('hidden');
+            // Only move focus when the visitor asked for the panel (avoids stealing focus on page load)
+            if (userOpened) (openPrefs ? $('cc-save') : $('cc-accept')).focus({ preventScroll: true });
+        }
+
+        $('cc-accept').addEventListener('click', function () { save(true, true); });
+        $('cc-accept2').addEventListener('click', function () { save(true, true); });
+        $('cc-reject').addEventListener('click', function () { save(false, false); });
+        $('cc-reject2').addEventListener('click', function () { save(false, false); });
+        $('cc-save').addEventListener('click', function () { save(analytics.checked, marketing.checked); });
+        $('cc-manage').addEventListener('click', function () { show(true, true); });
+        $('cc-policy-link').addEventListener('click', function () { var d = $('cookies'); if (d) d.open = true; });
+        document.querySelectorAll('[data-cookie-settings]').forEach(function (el) {
+            el.addEventListener('click', function () { show(true, true); });
+        });
+
+        window.addEventListener('bb-consent', function (e) {
+            var c = e.detail;
+            // if (c.analytics) { /* add your analytics <script> here */ }
+            // if (c.marketing) { /* add your marketing/pixel <script> here */ }
+        });
+
+        var saved = read();
+        if (saved) { announce(saved); } else { show(false, false); }
+    })();
     </script>
-
-    <script>
-        // Cookie consent. The choice is stored in this browser only (localStorage) and asked again after ~6 months.
-        // Nothing optional runs today. To add analytics/marketing later, load their scripts ONLY inside the
-        // bb-consent listener below, when the matching flag is true.
-        (function () {
-            var KEY = 'bb_cookie_consent';
-            var MAX_AGE = 180 * 24 * 60 * 60 * 1000;
-            var $ = function (id) { return document.getElementById(id); };
-            var banner = $('cookie-banner'), main = $('cc-main'), prefs = $('cc-prefs');
-            var analytics = $('cc-analytics'), marketing = $('cc-marketing');
-
-            function read() {
-                try {
-                    var v = JSON.parse(localStorage.getItem(KEY));
-                    if (v && v.ts && (Date.now() - v.ts) < MAX_AGE) return v;
-                } catch (e) {}
-                return null;
-            }
-            function announce(c) {
-                window.bbConsent = c;
-                try { window.dispatchEvent(new CustomEvent('bb-consent', { detail: c })); } catch (e) {}
-            }
-            function save(a, m) {
-                var c = { necessary: true, analytics: !!a, marketing: !!m, ts: Date.now() };
-                try { localStorage.setItem(KEY, JSON.stringify(c)); } catch (e) {}
-                announce(c);
-                banner.classList.add('hidden');
-            }
-            function show(openPrefs) {
-                var c = read() || { analytics: false, marketing: false };
-                analytics.checked = !!c.analytics;
-                marketing.checked = !!c.marketing;
-                main.classList.toggle('hidden', !!openPrefs);
-                prefs.classList.toggle('hidden', !openPrefs);
-                banner.classList.remove('hidden');
-                (openPrefs ? $('cc-save') : $('cc-accept')).focus({ preventScroll: true });
-            }
-
-            $('cc-accept').addEventListener('click', function () { save(true, true); });
-            $('cc-accept2').addEventListener('click', function () { save(true, true); });
-            $('cc-reject').addEventListener('click', function () { save(false, false); });
-            $('cc-reject2').addEventListener('click', function () { save(false, false); });
-            $('cc-save').addEventListener('click', function () { save(analytics.checked, marketing.checked); });
-            $('cc-manage').addEventListener('click', function () { show(true); });
-            $('cc-policy-link').addEventListener('click', function () {
-                var d = $('cookies'); if (d) d.open = true;
-            });
-            document.querySelectorAll('[data-cookie-settings]').forEach(function (el) {
-                el.addEventListener('click', function () { show(true); });
-            });
-
-            // Load optional scripts only when the visitor has agreed:
-            window.addEventListener('bb-consent', function (e) {
-                var c = e.detail;
-                // if (c.analytics) { /* add your analytics <script> here */ }
-                // if (c.marketing) { /* add your marketing/pixel <script> here */ }
-            });
-
-            var saved = read();
-            if (saved) { announce(saved); } else { show(false); }
-        })();
-    </script>
-    
-    <script>
-window.addEventListener('load', function () {
-  var v = document.getElementById('hero-video');
-  if (!v) return;
-  var c = navigator.connection || {};
-  if (c.saveData) return;
-  setTimeout(function () {
-    v.addEventListener('playing', function () { v.style.opacity = ''; }, { once: true });
-    v.src = v.getAttribute('data-src');
-    v.load();
-    var p = v.play();
-    if (p && p.catch) p.catch(function () {});
-  }, 1500);
-});
-</script>
 </body>
 </html>
