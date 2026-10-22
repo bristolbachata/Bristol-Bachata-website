@@ -18,7 +18,7 @@
     mobileMenu.classList.toggle('hidden', !open);
     menuBtn.setAttribute('aria-expanded', open);
     menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    menuBtn.firstElementChild.className = `fa-solid ${open ? 'fa-xmark' : 'fa-bars'} text-2xl`;
+    $('use', menuBtn).setAttribute('href', open ? '#i-xmark' : '#i-bars');
   }
 
   menuBtn.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden')));

@@ -1,8 +1,13 @@
+# Images and video: 7 days. File names are not versioned, so keep this modest.
 /*.jpg
   Cache-Control: public, max-age=604800
 /*.JPG
   Cache-Control: public, max-age=604800
 /*.mp4
   Cache-Control: public, max-age=604800
-/tailwind.css
+
+# Site CSS and JS: 1 day. Bump ?v= in index.html whenever they change.
+/noncritical.css
+  Cache-Control: public, max-age=86400
+/noncritical.js
   Cache-Control: public, max-age=86400
