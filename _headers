@@ -5,6 +5,10 @@
   Cache-Control: public, max-age=604800
 /*.webp
   Cache-Control: public, max-age=604800
+/*.png
+  Cache-Control: public, max-age=604800
+/*.ico
+  Cache-Control: public, max-age=604800
 /*.mp4
   Cache-Control: public, max-age=604800
 
