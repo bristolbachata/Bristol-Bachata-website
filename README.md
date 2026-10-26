@@ -8,7 +8,7 @@ One-page static site: `index.html` plus a few small files.
 - `_headers` – cache rules. `robots.txt`, `sitemap.xml` – SEO.
 - Images, `hero-video.mp4`, `logo.jpg` – loaded as referenced in `index.html`.
 - `favicon.ico`, `icon-192.png`, `apple-touch-icon.png` – site icons made from the logo.
-- `og-preview.webp` (and `.jpg` fallback) – 1200×630 social share preview.
+- `og-preview.webp` (and `og-preview.jpg` fallback) – 1200×630 social share preview.
 
 ## Changing the design
 1. Edit the HTML, then rebuild Tailwind with your usual command plus `--minify`.
