@@ -1,8 +1,6 @@
 # Images and video: 7 days. File names are not versioned, so keep this modest.
 /*.jpg
   Cache-Control: public, max-age=604800
-/*.JPG
-  Cache-Control: public, max-age=604800
 /*.webp
   Cache-Control: public, max-age=604800
 /*.png
