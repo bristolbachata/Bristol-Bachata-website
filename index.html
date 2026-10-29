@@ -30,6 +30,8 @@
     <meta name="twitter:description" content="Bachata classes every Monday &amp; Wednesday for all levels, plus Friday &amp; Saturday parties. No partner needed.">
     <meta name="twitter:image" content="https://bristolbachata.co.uk/og-preview.webp">
 
+    <!-- Hero still: shown instantly, and stays if the video is skipped or slow (Data Saver, Reduce Motion, weak signal) -->
+    <link rel="preload" as="image" href="hero-poster.webp" type="image/webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -284,7 +286,8 @@
         <!-- ===================== HERO ===================== -->
         <section id="hero" class="relative h-screen flex items-center justify-center pt-20 bg-bbDark">
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <video id="hero-video" class="hero-video w-full h-full object-cover" muted loop playsinline preload="none" aria-hidden="true" data-src="hero-video.mp4"></video>
+                <img src="hero-poster.webp" alt="" width="1280" height="720" fetchpriority="high" decoding="async" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+                <video id="hero-video" class="hero-video relative w-full h-full object-cover" muted loop playsinline preload="none" aria-hidden="true" data-src="hero-video.mp4"></video>
                 <div class="absolute inset-0 bg-gradient-to-b from-bbDark/80 via-bbDark/60 to-bbDark"></div>
             </div>
 
