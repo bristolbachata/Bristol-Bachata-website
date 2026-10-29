@@ -4,9 +4,8 @@ One-page static site: `index.html` plus a few small files.
 
 ## Files
 - `index.html` – the page. Its `<style>` block holds all render-blocking CSS: site rules first, then the minified Tailwind build.
-- `404.html` – friendly page shown for missing addresses (returns a real 404 status).
 - `noncritical.css` / `noncritical.js` – below-the-fold styles and interactivity, loaded after first paint.
-- `_headers` – security headers and cache rules. `robots.txt`, `sitemap.xml` – SEO.
+- `_headers` – cache rules. `robots.txt`, `sitemap.xml` – SEO.
 - Images, `hero-video.mp4`, `logo.jpg` – loaded as referenced in `index.html`.
 - `favicon.ico`, `icon-192.png`, `apple-touch-icon.png` – site icons made from the logo.
 - `og-preview.webp` (and `og-preview.jpg` fallback) – 1200×630 social share preview.

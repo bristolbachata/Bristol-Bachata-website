@@ -1,21 +1,5 @@
-# Security headers for every page and file.
-# If you later add a script or a service from another site (analytics, maps, video embeds),
-# add its address to the Content-Security-Policy line or the browser will block it.
-/*
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
-  Cross-Origin-Opener-Policy: same-origin
-  Strict-Transport-Security: max-age=31536000
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
-
 # Images and video: 7 days. File names are not versioned, so keep this modest.
 /*.jpg
-  Cache-Control: public, max-age=604800
-/*.JPG
-  Cache-Control: public, max-age=604800
-/*.jpeg
   Cache-Control: public, max-age=604800
 /*.webp
   Cache-Control: public, max-age=604800
@@ -30,10 +14,4 @@
 /noncritical.css
   Cache-Control: public, max-age=86400
 /noncritical.js
-  Cache-Control: public, max-age=86400
-
-# SEO files: 1 day
-/robots.txt
-  Cache-Control: public, max-age=86400
-/sitemap.xml
   Cache-Control: public, max-age=86400
